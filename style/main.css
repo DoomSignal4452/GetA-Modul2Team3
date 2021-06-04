@@ -94,12 +94,7 @@ a:hover {
     grid-template-columns: 2fr 8fr;
 }
 
-#modules {
-  /*  display: grid;
-    grid-template-rows: 0.5fr 0.5fr 0.5fr 0.5fr 0.5fr 2fr;
-    gap: 20px;
-    height: 90vh;*/
-}
+
 
 .moduler {
     background-color: gray;
@@ -107,3 +102,11 @@ a:hover {
     margin-bottom: 20px;
 }
 
+.modulHeader {
+    min-height: 20px;
+}
+
+.innerModulGrid {
+    min-height: 100px;
+    background-color: lightgrey;
+}
