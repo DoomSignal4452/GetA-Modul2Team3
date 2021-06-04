@@ -83,6 +83,10 @@ a:hover {
 
 /* admin dash */
 
+h2 {
+    margin-top: 0;
+}
+
 #weekTheme {
     background-color: gray;
     margin-right: 10%;
@@ -100,6 +104,7 @@ a:hover {
     background-color: gray;
     min-height: 20px;
     margin-bottom: 20px;
+    list-style: none;
 }
 
 .modulHeader {

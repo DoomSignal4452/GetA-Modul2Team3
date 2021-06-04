@@ -1,23 +1,29 @@
 function updateViewAdminDash() {
-    let html = ``;
+    let html = `        <div id=adminDashPage>
+            <div id="weekTheme">Week Theme</div>
+            <div>
+    `;
 
     for (let modulEntity of getTopLevelEntities()) {
         html += `
-                
-                 <div  class="moduler">
-                    ${modulEntity.name}                     
-                 </div>            
+            <div  class="moduler">
+                <div class="modulHeader"><h2>${modulEntity.name}</h2></div>
+        
             `;
         const teams = getChildren(modulEntity);
         for(let team of teams){
-            html += `<h3 class="modulHeader">${team.name}</h3>`;
+            html += `<div id="modul1collapse"><h3>${team.name}</h3>`;
             const students = getChildren(team);
             for(let student of students){
                 html += `<li>${student.name}</li>`;
             }
+
+            html += '</div>';
         }
+        html += '</div>';
     }
 
+    html += '</div></div>'
     document.getElementById('app').innerHTML = html;
 
 };
@@ -25,13 +31,12 @@ function updateViewAdminDash() {
 // function showTeams() {
 //     for(let i = 0; i < model.entities.length; i++) {
 //         if(model.entities[i].parentId == null && model.entities[i].id == 1) {
-// }
+// }<h3 class="modulHeader">${team.name}</h3>
 
-function updateViewAdminDashx() {
+/* function updateViewAdminDashx() {
     document.getElementById('app').innerHTML = `
         <div id=adminDashPage>
             <div id="weekTheme">weee</div>
-            <div>
             <div class="moduler" id="modul1" onclick="showHide('modul1collapse')">
                 <div class="modulHeader">${model.entities[0].name}</div>
                     <div id="modul1collapse" class="innerModulGrid">
@@ -71,7 +76,7 @@ function updateViewAdminDashx() {
             </div>
             </div>
                 `;
-}
+} */
 
 
 
