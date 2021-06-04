@@ -1,29 +1,9 @@
 function updateViewAdminDash() {
     let html = ``;
-    // let resultat = document.getElementById('app').innerHTML;
-
-
-    // for(let i = 0; i < model.entities.length; i++){
-    //     if(model.entities[i].parentId == null){
-
-    //         html += `
-
-
-    //         <div>${model.entities[i].name} </div>
-
-    //         `;
-
-    //     }
-
-    //     if(model.entities[i].id == model.entities[i].parentId){
-    //         html += `<div> ${model.entities[i].name} </div>`
-    //     }
-    // }
-    // html + `</div>`
-    //resultat += html;
 
     for (let modulEntity of getTopLevelEntities()) {
         html += `
+                
                  <div  class="moduler">
                     ${modulEntity.name}                     
                  </div>            
