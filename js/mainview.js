@@ -1,7 +1,7 @@
-function updateViewLogin(){
-    document.getElementById('app').innerHTML = `
+function updateViewMain(){
+    document.getElementById('content').innerHTML = `
     <div id="LoginPage">
-        <img id="logo" src="..//Modul2team3/images/Transp_logo.png" alt="Get academy logo">
+        <img src="./images/how-to-play-bass-guitar-notes.jpg" alt="Jadda">
         <input class="logInput" id="userName" placeholder="Username"></input>
         <input class="logInput" id="password" placeholder="Password"></input>
         <div class="buttons">
