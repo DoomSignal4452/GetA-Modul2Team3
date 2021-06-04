@@ -95,33 +95,15 @@ a:hover {
 }
 
 #modules {
-    display: grid;
+  /*  display: grid;
     grid-template-rows: 0.5fr 0.5fr 0.5fr 0.5fr 0.5fr 2fr;
     gap: 20px;
-    height: 90vh;
+    height: 90vh;*/
 }
 
-#modul1 {
+.moduler {
     background-color: gray;
-}
-
-#modul2 {
-    background-color: gray;
-}
-
-#modul3 {
-    background-color: gray;
-}
-
-#GetIt {
-    background-color: gray;
-}
-
-#Teachers {
-    background-color: gray;
-}
-
-#Notes {
-    background-color: gray;
+    min-height: 20px;
+    margin-bottom: 20px;
 }
 
