@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Logg</title>
+    <script src="../Modul2team3/js/viewpages/header.js"></script>
+    <script src="..//Modul2team3/js/modelmain.js"></script>
+    <script src="../Modul2team3/js/viewpages/loginview.js"></script>
+    <script src="..//Modul2team3/js/viewpages/admindashview.js"></script>
+    <script src="..//Modul2team3/js/viewpages/elevdashview.js"></script>
+    <script src="..//Modul2team3/js/controllerpages/login.js"></script>
+    <script src="..//Modul2team3/js/controllerpages/admindash.js"></script>
+<!--     <script src="LoggInputView.js"></script>
+    <script src="LoggInputView.js"></script>
+    <script src="LoggInputView.js"></script>
+    <script src="LoggInputView.js"></script>
+    <script src="LoggInputView.js"></script>
+    <script src="LoggInputView.js"></script> -->
+    
+    <link rel="stylesheet" href="..//Modul2team3/style/main.css">
+</head>
+<body>
+    <div id="header"></div>
+    <div id="app"></div>
+        
+        
+        
+    <script>
+        updateView();
+
+        function updateView() {
+            if(model.app.currentPage == "login") {updateViewLogin();};
+            if(model.app.currentPage == "admindash") {updateViewAdminDash(); ViewAdminHeader();};
+            if(model.app.currentPage == "elevDash") {updateViewElevDash(); ViewElevHeader();};
+            if(model.app.currentPage == "ElevLogg") {updateViewElevLogg(); ViewElevHeader();};
+            if(model.app.currentPage == "adminLogg") {updateViewAdminLogg(); ViewAdminHeader();};
+            if(model.app.currentPage == "adminQ") {updateViewAdminQ(); ViewAdminHeader();};
+        };
+
+    </script>
+</body>
+</html>

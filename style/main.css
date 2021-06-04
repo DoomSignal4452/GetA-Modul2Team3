@@ -1,0 +1,127 @@
+/* Login Page */
+body {
+    background-color: gainsboro;
+    font-family: Helvetica;
+}
+
+#LoginPage {
+    display: grid;
+    grid-template-rows: 3fr 1fr 1fr 1fr;
+    margin: auto;
+    width: 200px;
+    margin-top: 250px;
+}
+
+#logo {
+    text-align: center;
+    width:200px;
+    height: 100px;
+}
+
+.logInput {
+    width: 200px;
+    height: 20px;
+}
+
+.buttons {
+    display: grid;
+    grid-template-columns: 2fr 2fr;
+    gap: 10px;
+}
+
+/* Navigation Bar */
+div.headerWrap {
+    background-color: rgb(128, 128, 128);
+    margin: 10px;
+    text-align: center;
+
+}
+
+div.headerTop {
+    height: 60px;
+    padding: 10px;
+}
+
+div.headerBot {
+    background-color: rgb(190, 190, 190);
+    height: 40px;
+}
+
+.navBar {
+    height: 40px;
+}
+
+.navBar a {
+    color: rgb(26, 26, 26);
+    float: left;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+    padding: 12px 12px;
+    text-decoration: none;
+}
+
+.floatRight {
+    float: right;
+}
+
+.navbar:hover a:hover {
+    background-color: rgb(47, 0, 255);
+}
+
+.hoverRed:hover a:hover {
+    background-color: rgb(218, 218, 218);
+    height: 16px;
+}
+
+a:hover {
+    color: rgb(56, 56, 56);
+}
+  /* End Navigation Bar */
+
+
+
+/* admin dash */
+
+#weekTheme {
+    background-color: gray;
+    margin-right: 10%;
+}
+
+#adminDashPage {
+    display: grid;
+    margin: 10px;
+    grid-template-columns: 2fr 8fr;
+}
+
+#modules {
+    display: grid;
+    grid-template-rows: 0.5fr 0.5fr 0.5fr 0.5fr 0.5fr 2fr;
+    gap: 20px;
+    height: 90vh;
+}
+
+#modul1 {
+    background-color: gray;
+}
+
+#modul2 {
+    background-color: gray;
+}
+
+#modul3 {
+    background-color: gray;
+}
+
+#GetIt {
+    background-color: gray;
+}
+
+#Teachers {
+    background-color: gray;
+}
+
+#Notes {
+    background-color: gray;
+}
+
