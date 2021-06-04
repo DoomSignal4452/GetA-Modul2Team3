@@ -108,7 +108,10 @@ function isChildOf(childId, parentId) {
     return false;
 }
 
-function getChildren()
+function getChildren(entity){
+    return model.entities.filter(e => e.parentId === entity.id);
+}
+
 function getTopLevelEntities() {
     return model.entities.filter(e => e.parentId === null);
 }

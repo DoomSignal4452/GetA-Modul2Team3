@@ -1,4 +1,4 @@
-function updateViewModules() {
+function updateViewAdminDash() {
     let html = ``;
     // let resultat = document.getElementById('app').innerHTML;
 
@@ -24,13 +24,13 @@ function updateViewModules() {
 
     for (let modulEntity of getTopLevelEntities()) {
         html += `
-                 <div>
+                 <div  class="moduler">
                     ${modulEntity.name}                     
                  </div>            
             `;
-        const teams = getChildren(modelEntity);
+        const teams = getChildren(modulEntity);
         for(let team of teams){
-            html += `<h3>${team.name}</h3>`;
+            html += `<h3 class="modulHeader">${team.name}</h3>`;
             const students = getChildren(team);
             for(let student of students){
                 html += `<li>${student.name}</li>`;
@@ -47,7 +47,7 @@ function updateViewModules() {
 //         if(model.entities[i].parentId == null && model.entities[i].id == 1) {
 // }
 
-function updateViewAdminDash() {
+function updateViewAdminDashx() {
     document.getElementById('app').innerHTML = `
         <div id=adminDashPage>
             <div id="weekTheme">weee</div>
