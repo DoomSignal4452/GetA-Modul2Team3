@@ -1,6 +1,6 @@
 const model = {
     app: {
-        currentPage: 'admindash',
+        currentPage: 'elevDash',
     },
     inputs: {
         adminReadPage: {

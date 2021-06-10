@@ -89,15 +89,65 @@ h2 {
 
 #weekTheme {
     background-color: gray;
-    margin-right: 10%;
+    /*margin-right: 10%;*/
 }
 
 #adminDashPage {
     display: grid;
+    gap: 10px;
     margin: 10px;
     grid-template-columns: 2fr 8fr;
 }
 
+#weekThemeElev {
+    grid-area: weekThemeElev;
+    background-color: gray;
+    text-align: center;    
+}
+
+#logWeek {
+    grid-area: logWeek;
+}
+
+#chatNotes {
+    grid-area: chatNotes;
+}
+
+#elevDashPage {
+    margin: 10px;
+    display: grid;
+    gap: 10px;
+    /*margin: 10px;*/
+    /*grid-template-columns: 2fr 8fr;*/
+    grid-template-areas:
+    'weekThemeElev logWeek logWeek logWeek logWeek logWeek'
+    'weekThemeElev chatNotes chatNotes chatNotes chatNotes chatNotes';
+}
+
+#logWeek {
+    display: grid;
+    background-color: gray;
+    height: 300px;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    gap: 10px;
+    padding: 2mm;
+}
+
+#chatNotes {
+    background-color: gray;
+    height: 300px;
+}
+
+
+
+.days {
+    background-color: rgb(194, 194, 194);
+    text-align: center;
+}
+
+.days:hover {
+    background-color: rgb(172, 172, 172);
+}
 
 
 .moduler {
