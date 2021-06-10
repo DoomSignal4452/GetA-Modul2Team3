@@ -1,85 +1,75 @@
+let openClose = 'none';
+let openClose2 = 'none';
+
 function updateViewAdminDash() {
+    console.log('updateViewAdminDash is running')
     let html = `        <div id=adminDashPage>
             <div id="weekTheme">Week Theme</div>
             <div>
     `;
 
+    // modul3Collapse
+
+    let counter = 0;
     for (let modulEntity of getTopLevelEntities()) {
+        counter++;
+        let moduleName = 'modul' + `${counter}`;
+        let moduleCollapseName = 'modul' + `${counter}` + 'Collapse';
+
         html += `
-            <div  class="moduler">
-                <div class="modulHeader"><h2>${modulEntity.name}</h2></div>
-        
+            <div class="moduler" id=${moduleName} onclick="collapse(this.id)">
+                <div id=temp class="modulHeader">
+                    <h2>${modulEntity.name}</h2>
+                
+                    <div id="${moduleCollapseName}">
+            
             `;
+
+
+        
         const teams = getChildren(modulEntity);
+        
+
+        let counter2 = 0;
+        
+ 
         for(let team of teams){
-            html += `<div id="modul1collapse"><h3>${team.name}</h3>`;
+            counter2++;
+            
+            
+            html += `<div>
+                        <h3>${team.name}</h3>`;
             const students = getChildren(team);
+            html += '<div>'
             for(let student of students){
                 html += `<li>${student.name}</li>`;
             }
 
-            html += '</div>';
+
+            html += `</div></div>`;
         }
-        html += '</div>';
+        html += `</div></div></div>`;
+       
     }
+
+   
 
     html += '</div></div>'
     document.getElementById('app').innerHTML = html;
 
 };
 
-// function showTeams() {
-//     for(let i = 0; i < model.entities.length; i++) {
-//         if(model.entities[i].parentId == null && model.entities[i].id == 1) {
-// }<h3 class="modulHeader">${team.name}</h3>
-
-/* function updateViewAdminDashx() {
-    document.getElementById('app').innerHTML = `
-        <div id=adminDashPage>
-            <div id="weekTheme">weee</div>
-            <div class="moduler" id="modul1" onclick="showHide('modul1collapse')">
-                <div class="modulHeader">${model.entities[0].name}</div>
-                    <div id="modul1collapse" class="innerModulGrid">
-                </div>
-            </div>
-
-            <div class="moduler" id="modul2" onclick="showHide('modul2collapse')">
-                <div class="modulHeader">${model.entities[1].name}</div>
-                    <div id="modul2collapse" class="innerModulGrid">
-                </div>
-            </div>
-
-            <div class="moduler" id="modul3" onclick="showHide('modul3collapse')">
-                <div class="modulHeader">${model.entities[2].name}</div>
-                    <div id="modul3collapse" class="innerModulGrid">
-
-                </div>
-            </div>
-
-            <div class="moduler" id="GetIt" onclick="showHide('GetItcollapse')">
-                <div class="modulHeader">Get IT</div>
-                    <div id="GetItcollapse" class="innerModulGrid">
-
-                </div>
-            </div>
-
-            <div class="moduler" id="Teachers" onclick="showHide('Teacherscollapse')">
-                <div class="modulHeader">Teachers</div>
-                    <div id="Teacherscollapse" class="innerModulGrid">
-
-                </div>
-            </div>
-
-            <div class="moduler" id="Notes">
-                <input type="textarea" placeholder="notes"></input>
-            </div>
-            </div>
-            </div>
-                `;
-} */
 
 
 
+{/* <div id="modul1" onclick="collapse(this.id)">Modul1>
+    <div id="modul1Collapse"> Content1 </div>
+</div>
 
+<div id="modul2" onclick="collapse(this.id)">Modul1>
+    <div id="modul2Collapse"> Content2 </div>
+</div>
 
-
+<div id="modul3" onclick="collapse(this.id)">Modul1>
+    <div id="modul3Collapse"> Content3 </div>
+</div> */}

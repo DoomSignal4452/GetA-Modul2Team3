@@ -29,7 +29,7 @@ body {
     gap: 10px;
 }
 
-/* Navigation Bar */
+/* Navigattion Bar */
 div.headerWrap {
     background-color: rgb(128, 128, 128);
     margin: 10px;
@@ -115,3 +115,9 @@ h2 {
     min-height: 100px;
     background-color: lightgrey;
 }
+
+.collapse {
+    display: none; 
+}
+
+

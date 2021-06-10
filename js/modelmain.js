@@ -61,15 +61,15 @@ const model = {
         { name: 'Team 3', id: 1011, parentId: 3 },
         { name: 'Team 4', id: 1012, parentId: 3 },
 
-        { name: 'Alexander', id: 3001, parentId: 1001, username: 'Alexander', password: 'hemmelig' },
-        { name: 'Emil', id: 3002, parentId: 1001, username: 'Emil', password: 'hemmelig' },
-        { name: 'Lina', id: 3003, parentId: 1001, username: 'Lina', password: 'hemmelig' },
-        { name: 'Marius', id: 3004, parentId: 1001, username: 'Marius', password: 'hemmelig' },
-
         { name: 'Linn', id: 2001, parentId: 5, username: 'Linn', password: 'hemmelig' },
         { name: 'Terje', id: 2002, parentId: 5, username: 'Terje', password: 'hemmelig' },
         { name: 'Joakim', id: 2003, parentId: 5, username: 'Joakim', password: 'hemmelig' },
         { name: 'Therese', id: 2004, parentId: 5, username: 'Therese', password: 'hemmelig' },
+
+        { name: 'Alexander', id: 3001, parentId: 1001, username: 'Alexander', password: 'hemmelig' },
+        { name: 'Emil', id: 3002, parentId: 1001, username: 'Emil', password: 'hemmelig' },
+        { name: 'Lina', id: 3003, parentId: 1001, username: 'Lina', password: 'hemmelig' },
+        { name: 'Marius', id: 3004, parentId: 1001, username: 'Marius', password: 'hemmelig' },
 
     ],
     questions: [
