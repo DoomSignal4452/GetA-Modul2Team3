@@ -20,10 +20,11 @@
     <script src="LoggInputView.js"></script> -->
     
     <link rel="stylesheet" href="style/main.css">
+    <link rel="stylesheet" href="Calendar/calendar.css">
 </head>
 <body>
     <div id="header"></div>
-    <div id="app">does not run</div>
+    <div id="app"></div>
 
 
 
@@ -33,7 +34,7 @@
         updateView();
 
         function updateView() {
-            if(model.app.currentPage == "login") {updateViewLogin();};
+            if(model.app.currentPage == "login") {updateViewLogin(); ViewNoHeader();};
             if(model.app.currentPage == "admindash") {updateViewAdminDash(); ViewAdminHeader();};
             if(model.app.currentPage == "elevDash") {updateViewElevDash(); ViewElevHeader();};
             if(model.app.currentPage == "ElevLogg") {updateViewElevLogg(); ViewElevHeader();};

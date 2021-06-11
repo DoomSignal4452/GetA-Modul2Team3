@@ -1,5 +1,4 @@
-let openClose = 'none';
-let openClose2 = 'none';
+
 
 function updateViewAdminDash() {
     console.log('updateViewAdminDash is running')

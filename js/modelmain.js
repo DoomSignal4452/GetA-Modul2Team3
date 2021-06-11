@@ -3,6 +3,11 @@ const model = {
         currentPage: 'elevDash',
     },
     inputs: {
+        loggInPage: {
+            UserName: '',
+            Passord: '',
+        },
+
         adminReadPage: {
             Comments: '',
         },
@@ -25,7 +30,6 @@ const model = {
             SlideBarOrNot: false, //skal addes
         },
         otherPage: {
-
         }
     },
     /*
@@ -61,15 +65,17 @@ const model = {
         { name: 'Team 3', id: 1011, parentId: 3 },
         { name: 'Team 4', id: 1012, parentId: 3 },
 
-        { name: 'Linn', id: 2001, parentId: 5, username: 'Linn', password: 'hemmelig' },
-        { name: 'Terje', id: 2002, parentId: 5, username: 'Terje', password: 'hemmelig' },
-        { name: 'Joakim', id: 2003, parentId: 5, username: 'Joakim', password: 'hemmelig' },
-        { name: 'Therese', id: 2004, parentId: 5, username: 'Therese', password: 'hemmelig' },
+        { name: 'Linn', id: 2001, parentId: 5, username: 'Linn', password: 'hemmelig', isAdmin: true, },
+        { name: 'Terje', id: 2002, parentId: 5, username: 'Terje', password: 'hemmelig', isAdmin: true, },
+        { name: 'Joakim', id: 2003, parentId: 5, username: 'Joakim', password: 'hemmelig', isAdmin: true, },
+        { name: 'Therese', id: 2004, parentId: 5, username: 'Therese', password: 'hemmelig', isAdmin: true, },
+        { name: 'a', id: 2005, parentId: 5, username: 'a', password: 'a', isAdmin: true, },
 
         { name: 'Alexander', id: 3001, parentId: 1001, username: 'Alexander', password: 'hemmelig' },
         { name: 'Emil', id: 3002, parentId: 1001, username: 'Emil', password: 'hemmelig' },
         { name: 'Lina', id: 3003, parentId: 1001, username: 'Lina', password: 'hemmelig' },
         { name: 'Marius', id: 3004, parentId: 1001, username: 'Marius', password: 'hemmelig' },
+        { name: 'e', id: 3005, parentId: 1001, username: 'e', password: 'e' },
 
     ],
     questions: [

@@ -1,4 +1,10 @@
 
+function LoggUt() {
+  model.app.currentPage = "login";
+  updateView();
+}
+
+
 function collapse(modulId) {
   if (modulId == 'modul1') {
      document.getElementById('modul1Collapse').classList.toggle('collapse');

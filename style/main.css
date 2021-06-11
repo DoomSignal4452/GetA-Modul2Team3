@@ -1,173 +1,179 @@
 /* Login Page */
 body {
-    background-color: gainsboro;
-    font-family: Helvetica;
+  background-color: gainsboro;
+  font-family: Helvetica;
 }
 
 #LoginPage {
-    display: grid;
-    grid-template-rows: 3fr 1fr 1fr 1fr;
-    margin: auto;
-    width: 200px;
-    margin-top: 250px;
+  display: grid;
+  grid-template-rows: 3fr 1fr 1fr 1fr;
+  margin: auto;
+  width: 200px;
+  margin-top: 250px;
 }
 
 #logo {
-    text-align: center;
-    width:200px;
-    height: 100px;
+  text-align: center;
+  width: 200px;
+  height: 100px;
 }
 
 .logInput {
-    width: 200px;
-    height: 20px;
+  width: 200px;
+  height: 20px;
 }
 
 .buttons {
-    display: grid;
-    grid-template-columns: 2fr 2fr;
-    gap: 10px;
+  display: grid;
+  grid-template-columns: 2fr 2fr;
+  gap: 10px;
 }
 
 /* Navigattion Bar */
 div.headerWrap {
-    background-color: rgb(128, 128, 128);
-    margin: 10px;
-    text-align: center;
-
+  background-color: rgb(128, 128, 128);
+  margin: 10px;
+  text-align: center;
 }
 
 div.headerTop {
-    height: 60px;
-    padding: 10px;
+  height: 60px;
+  padding: 10px;
 }
 
 div.headerBot {
-    background-color: rgb(190, 190, 190);
-    height: 40px;
+  background-color: rgb(190, 190, 190);
+  height: 40px;
 }
 
 .navBar {
-    height: 40px;
+  height: 40px;
 }
 
-.navBar a {
-    color: rgb(26, 26, 26);
-    float: left;
-    font-size: 16px;
-    font-weight: bold;
-    text-align: center;
-    padding: 12px 12px;
-    text-decoration: none;
+.navBar a.aHeader {
+  color: rgb(26, 26, 26);
+  float: left;
+  font-size: 16px;
+  font-weight: bold;
+  text-align: center;
+  padding: 12px 12px;
+  text-decoration: none;
 }
 
 .floatRight {
-    float: right;
+  float: right;
 }
 
 .navbar:hover a:hover {
-    background-color: rgb(47, 0, 255);
+  background-color: rgb(47, 0, 255);
 }
 
 .hoverRed:hover a:hover {
-    background-color: rgb(218, 218, 218);
-    height: 16px;
+  background-color: rgb(218, 218, 218);
+  height: 16px;
 }
 
-a:hover {
-    color: rgb(56, 56, 56);
+a.aHeader:hover {
+  color: rgb(56, 56, 56);
 }
-  /* End Navigation Bar */
-
-
+/* End Navigation Bar */
 
 /* admin dash */
 
 h2 {
-    margin-top: 0;
+  margin-top: 0;
 }
 
 #weekTheme {
-    background-color: gray;
-    /*margin-right: 10%;*/
+  background-color: gray;
+  /*margin-right: 10%;*/
 }
 
 #adminDashPage {
-    display: grid;
-    gap: 10px;
-    margin: 10px;
-    grid-template-columns: 2fr 8fr;
+  display: grid;
+  gap: 10px;
+  margin: 10px;
+  grid-template-columns: 2fr 8fr;
 }
 
 #weekThemeElev {
-    grid-area: weekThemeElev;
-    background-color: gray;
-    text-align: center;    
+  grid-area: weekThemeElev;
+  background-color: gray;
+  text-align: center;
+  display: grid;
+  grid-template-rows: 1fr 4fr 2fr;
+}
+
+#calendar {
+  margin: 5px;
+  border: solid black 2px;
+  width: auto;
+}
+
+#pinnedWeekThemeModul2 {
+  margin: 5px;
+  border: solid black 2px;
+  width: auto;
 }
 
 #logWeek {
-    grid-area: logWeek;
+  grid-area: logWeek;
 }
 
 #chatNotes {
-    grid-area: chatNotes;
+  grid-area: chatNotes;
 }
 
 #elevDashPage {
-    margin: 10px;
-    display: grid;
-    gap: 10px;
-    /*margin: 10px;*/
-    /*grid-template-columns: 2fr 8fr;*/
-    grid-template-areas:
-    'weekThemeElev logWeek logWeek logWeek logWeek logWeek'
-    'weekThemeElev chatNotes chatNotes chatNotes chatNotes chatNotes';
+  margin: 10px;
+  display: grid;
+  gap: 10px;
+  /*margin: 10px;*/
+  /*grid-template-columns: 2fr 8fr;*/
+  grid-template-areas:
+    "weekThemeElev logWeek logWeek logWeek logWeek logWeek"
+    "weekThemeElev chatNotes chatNotes chatNotes chatNotes chatNotes";
 }
 
 #logWeek {
-    display: grid;
-    background-color: gray;
-    height: 300px;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-    gap: 10px;
-    padding: 2mm;
+  display: grid;
+  background-color: gray;
+  height: 300px;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  gap: 10px;
+  padding: 2mm;
 }
 
 #chatNotes {
-    background-color: gray;
-    height: 300px;
+  background-color: gray;
+  height: 300px;
 }
 
-
-
 .days {
-    background-color: rgb(194, 194, 194);
-    text-align: center;
+  background-color: rgb(194, 194, 194);
+  text-align: center;
 }
 
 .days:hover {
-    background-color: rgb(172, 172, 172);
+  background-color: rgb(172, 172, 172);
 }
 
-
 .moduler {
-    background-color: gray;
-    min-height: 20px;
-    margin-bottom: 20px;
-    list-style: none;
+  background-color: gray;
+  min-height: 20px;
+  margin-bottom: 20px;
+  list-style: none;
 }
 
 .modulHeader {
-    min-height: 20px;
+  min-height: 20px;
 }
 
 .innerModulGrid {
-    min-height: 100px;
-    background-color: lightgrey;
+  min-height: 100px;
+  background-color: lightgrey;
 }
 
 .collapse {
-    display: none; 
+  display: none;
 }
-
-

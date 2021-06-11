@@ -19,7 +19,7 @@ function ViewAdminHeader() {
 
                 <div class="hoverRed"><a href="#">item4</a></div>
 
-                <div class="hoverRed floatRight"><a href="#">About</a></div>
+                <div class="hoverRed floatRight" onclick="LoggUt()"><a href="#">Logg Ut</a></div>
 
             </div>
 
@@ -39,17 +39,17 @@ function ViewElevHeader() {
         <div class=headerBot>
 
             <div class="navBar">
-                <div class="hoverRed"><a href="index.html">Home</a></div>
+                <div class="hoverRed"><a class="aHeader" href="index.html">Home</a></div>
 
-                <div class="hoverRed"><a href="#">item1</a></div>
+                <div class="hoverRed"><a class="aHeader" href="#">item1</a></div>
 
-                <div class="hoverRed"><a href="#">item2</a></div>
+                <div class="hoverRed"><a class="aHeader" href="#">item2</a></div>
 
-                <div class="hoverRed"><a href="#">item3</a></div>
+                <div class="hoverRed"><a class="aHeader" href="#">item3</a></div>
 
-                <div class="hoverRed"><a href="#">item4</a></div>
+                <div class="hoverRed"><a class="aHeader" href="#">item4</a></div>
 
-                <div class="hoverRed floatRight"><a href="#">About</a></div>
+                <div class="hoverRed floatRight" onclick="LoggUt()"><a  class="aHeader" href="#">Logg Ut</a></div>
 
             </div>
 
@@ -59,4 +59,6 @@ function ViewElevHeader() {
     `;
 }
 
-
+function ViewNoHeader() {
+    document.getElementById('header').innerHTML = ``;
+}
