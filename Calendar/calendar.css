@@ -27,9 +27,6 @@
 }
 
 /* Front - Calendar */
-.front {
-  transform: rotateY(0deg);
-}
 
 .current-date {
   border-bottom: 1px solid rgba(73, 114, 133, 0.6);

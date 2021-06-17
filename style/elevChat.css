@@ -1,0 +1,33 @@
+#chatNotes {
+  display: grid;
+  grid-template-columns: 2fr 2fr;
+  gap: 5px;
+  margin-top: 5px;
+}
+
+#elevNotes {
+  margin: 10px;
+  border: solid black 2px;
+  height: 85%;
+  padding: 2mm;
+
+  /* min-width: 300px;
+    min-height: 60px;
+
+    max-width: 500px;
+    max-height: 100px; */
+}
+
+#chatBox {
+  border: solid black 2px;
+  height: 75%;
+  width: 95%;
+  background-color: rgb(221, 221, 221);
+  margin: 10px;
+}
+
+#chatInput {
+  width: 75%;
+  height: 7%;
+  margin: 10px;
+}

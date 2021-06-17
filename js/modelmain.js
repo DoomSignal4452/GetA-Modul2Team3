@@ -1,6 +1,6 @@
 const model = {
     app: {
-        currentPage: 'elevDash',
+        currentPage: 'ElevLogg',
     },
     inputs: {
         loggInPage: {
