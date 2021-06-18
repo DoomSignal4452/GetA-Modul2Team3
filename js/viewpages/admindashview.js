@@ -61,7 +61,7 @@ function updateViewAdminDash() {
 
 
 
-{/* <div id="modul1" onclick="collapse(this.id)">Modul1>
+/* <div id="modul1" onclick="collapse(this.id)">Modul1>
     <div id="modul1Collapse"> Content1 </div>
 </div>
 
@@ -71,4 +71,4 @@ function updateViewAdminDash() {
 
 <div id="modul3" onclick="collapse(this.id)">Modul1>
     <div id="modul3Collapse"> Content3 </div>
-</div> */}
+</div> */

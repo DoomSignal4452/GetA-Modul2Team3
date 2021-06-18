@@ -20,6 +20,13 @@ function collapse(modulId) {
 
 }
 
+
+
+// AdminQ
+
+
+
+
 // function collapseTeam(teamId) {
 //     if (teamId == 'team1') {
 //       document.getElementById('modul1Collapse').classList.toggle('collapse');

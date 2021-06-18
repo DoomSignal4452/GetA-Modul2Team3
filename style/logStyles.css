@@ -37,7 +37,13 @@
 #Qreply {
   margin: 10px;
   width: 98%;
-  height: 65%;
+  height: 50%;
+}
+
+#Qcomment {
+  margin: 10px;
+  height: 20px;
+  width: 98%;
 }
 
 .slidecontainer {
@@ -70,6 +76,8 @@
   border: 1px solid lightgrey;
   padding: 0.2%;
   border-radius: 5%;
+  margin-right: 20px;
+  margin-bottom: 20px;
 }
 
 .sliderUpdateDivText {

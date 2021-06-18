@@ -1,6 +1,7 @@
 const model = {
     app: {
-        currentPage: 'ElevLogg',
+        currentPage: 'adminQ',
+        currentLogInn: '',
     },
     inputs: {
         loggInPage: {
@@ -85,7 +86,21 @@ const model = {
         { text: 'What\'s up Lina?', id: 1, entityId: 6, date: '2021-05-10' }, // student: 1
     ],
     answers: [
-        { test: 'Jo, takk -bra.', id: 1, questionId: 1, entityId: 6, teachersComment: 'Godt å høre!' },
+        { Elev: 'Alexander', test: 'Jo, takk -bra.', id: 1, questionId: 1, entityId: 6, teachersComment: 'Godt å høre!' },
+        { Elev: 'Alexander', test: 'Jo, takk -bra.', id: 2, questionId: 2, entityId: 6, teachersComment: 'Godt å høre!' },
+        { Elev: 'Alexander', test: 'Jo, takk -bra.', id: 3, questionId: 3, entityId: 6, teachersComment: 'Godt å høre!' },
+
+        { Elev: 'Emil', test: 'Jo, takk -bra.', id: 4, questionId: 1, entityId: 6, teachersComment: 'Godt å høre!' },
+        { Elev: 'Emil', test: 'Jo, takk -bra.', id: 5, questionId: 2, entityId: 6, teachersComment: 'Godt å høre!' },
+        { Elev: 'Emil', test: 'Jo, takk -bra.', id: 6, questionId: 3, entityId: 6, teachersComment: 'Godt å høre!' },
+
+        { Elev: 'Lina', test: 'Jo, takk -bra.', id: 7, questionId: 1, entityId: 6, teachersComment: 'Godt å høre!' },
+        { Elev: 'Lina', test: 'Jo, takk -bra.', id: 8, questionId: 2, entityId: 6, teachersComment: 'Godt å høre!' },
+        { Elev: 'Lina', test: 'Jo, takk -bra.', id: 9, questionId: 3, entityId: 6, teachersComment: 'Godt å høre!' },
+
+        { Elev: 'Marius', test: 'Jo, takk -bra.', id: 10, questionId: 1, entityId: 6, teachersComment: 'Godt å høre!' },
+        { Elev: 'Marius', test: 'Jo, takk -bra.', id: 11, questionId: 2, entityId: 6, teachersComment: 'Godt å høre!' },
+        { Elev: 'Marius', test: 'Jo, takk -bra.', id: 12, questionId: 3, entityId: 6, teachersComment: 'Godt å høre!' },
     ],
 };
 

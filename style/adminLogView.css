@@ -1,0 +1,107 @@
+#adminLog {
+    display: grid;
+    grid-template-columns: 2fr 8fr;
+    gap: 5px;
+    margin: 10px;
+}
+
+
+#logWeekThemeAdmin {
+    background-color: gray;
+    text-align: center;
+    display: grid;
+    grid-template-rows: 0.3fr 1.5fr 4fr;
+  }
+
+
+#studName {
+    font-size: x-large;
+    font-family: Impact,'Arial Narrow Bold', sans-serif;
+    margin: 20PX;
+    padding-top: 20px;
+
+
+
+}
+
+#makeQuestions {
+    /* position: absolute;
+    right: 20px;
+    top: 20px;
+     */
+    background-color: gray;
+    height: 90%;
+    padding-top: 5mm;
+  }
+
+  #addQuestion {
+      background-color: white;
+      height: 30px;
+      width: 91%;
+      margin: auto;
+      padding: 2px;
+  }
+
+  #addQuestionButton {
+      float: right;
+      background-color: #77c2a6;
+      height: 30px;
+      width: 30px;
+      font-size: x-large;
+      /*margin-right: 10px;*/
+      /*margin-bottom: 10px;*/
+      /* text-align: center; */ 
+    
+      /*right: 1vw;*/
+
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+  #addQuestionText {
+      /*padding-top: 20px;
+      padding-left: 50px;*/
+      /* position: relative;
+      top: 30%; */
+      align-items: center;
+      
+  }
+
+  .newQ {
+    /* display: flex; */
+    /*height: 200px;*/
+    margin-top: 6px;
+  }
+
+  #qToModules {
+    background-color: #77c2a6;
+    margin: auto;
+    margin-top: 2vh;
+    height: auto;
+    width: 91%;
+    
+    padding: 2px;
+  }
+
+  .large {
+      font-size: 110%;
+  }
+
+  .checkbox  {
+      width: 30px;
+      height: 30px;
+      padding: auto;
+      padding-bottom: 2vh;
+  }
+  
+  select option {
+      background-color: black;
+
+
+  }
+
+  select {
+
+  }
+
