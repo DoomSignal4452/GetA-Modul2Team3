@@ -16,10 +16,6 @@ function skrivElevNotes() {
 function getValueFromSlider(){      
         let sliderValue = document.getElementById('myRange').value;
         document.getElementById('sliderUpdateDivText').innerHTML = sliderValue;    
-
-
-    
-
 }
 
 

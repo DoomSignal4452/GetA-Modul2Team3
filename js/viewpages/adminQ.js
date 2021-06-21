@@ -1,4 +1,4 @@
-function updateViewAdminQ() {
+function updateViewAdminQ(hei) {
     let html = `
     
     <div id="adminLog">
@@ -135,62 +135,62 @@ function updateViewAdminQ() {
         <div id="addQuestion">     
             <div id="addQuestionText">
                 <p class="newQ" style="float:left; margin-left: 0.2vw;">Legg til spørsmål</p> 
-                <p> <button id="addQuestionButton"> +</button> 
+                <p> <button id="addQuestionButton"> + </button> 
                 </p> 
             </div>
         </div>
 
          <div id="qToModules" class="large">
-            <div>Modul1
-                <input class="checkbox" type="checkbox" checked />
+            <div class="modulbox">Modul 1
+                <input ${model.inputs.adminQmodelPage.modulCheckbox.modul1} onclick="modulChecked(1)" id="modul1" value="${model.inputs.adminQmodelPage.modulCheckbox.modul1}" class="checkbox" type="checkbox" />
             </div>
      
 
             
-            <div>Modul2
-                <input class="checkbox" type="checkbox" checked />
+            <div class="modulbox">Modul 2
+                <input ${model.inputs.adminQmodelPage.modulCheckbox.modul2} onclick="modulChecked(2)" id="modul2" value="${model.inputs.adminQmodelPage.modulCheckbox.modul2}" class="checkbox" type="checkbox" />
             </div>
       
 
-            <div>Modul3
-                <input  class="checkbox" type="checkbox" />
+            <div class="modulbox">Modul 3
+                <input ${model.inputs.adminQmodelPage.modulCheckbox.modul3} onclick="modulChecked(3)" id="modul3" value="${model.inputs.adminQmodelPage.modulCheckbox.modul3}" class="checkbox" type="checkbox" />
             </div>
 
             <br>
 
          
             
-          
-
-            <select  class="large">   
-                <option unselected selected>Specifi Team</option>        
-                <option value="1">Team1</option>
-                <option value="2">Team2</option>
-                <option value="3">Team3</option>      
+            <div class="dropbox">
+                <input  class="checkbox" type="checkbox" />
+                <select  id="selectTeam" class="large">   
+                    <option unselected selected>All teams</option>        
+                    <option value="${model.inputs.adminQmodelPage.SpecificTeam.TeamName}">Team1</option>
+                    <option value="${model.inputs.adminQmodelPage.SpecificTeam.TeamName}">Team2</option>
+                    <option value="${model.inputs.adminQmodelPage.SpecificTeam.TeamName}">Team3</option>      
             
-            </select>
+                </select>
+            </div>
 
             <br>
-
-            <select class="large" style="margin: auto; margin-bottom: 2vh;">   
-            <option unselected selected>Specific Elev</option>        
-            <option value="1">Elev1</option>
-            <option value="2">Elev2</option>
-            <option value="3">Elev3</option>      
-        
-        </select>
+            <div class="dropbox">
+                <input  class="checkbox" type="checkbox" />
+                ${createDropDownElev()}
+            </div>
 
 
 
 
-          
 
-            <div>Team</div>
-            
-            <div>Elev</div>
 
-            <div>Tall Rangering</div>
-            
+
+
+
+            <div class="modulbox">add slidebar
+                <input  class="checkbox" type="checkbox" />
+            </div>
+
+            <input type="date">            
+            <button id="addnow">Lagre Spørsmål</button> 
          
          </div>
     </div>

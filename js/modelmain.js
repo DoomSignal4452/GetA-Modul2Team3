@@ -16,9 +16,9 @@ const model = {
             lagSpm: '',
             datoForQ: '', //skal addes
             modulCheckbox: {
-                modul1: false,
-                modul2: true,
-                modul3: false,
+                modul1: '',
+                modul2: '',
+                modul3: '',
             },
             SpecificTeam: {
                 CheckBox: false,
@@ -45,33 +45,41 @@ const model = {
         ],
     */
     entities: [
+        // Main modules
         { name: 'Modul 1', id: 1, parentId: null },
         { name: 'Modul 2', id: 2, parentId: null },
         { name: 'Modul 3', id: 3, parentId: null },
         { name: 'GET IT', id: 4, parentId: null },
         { name: 'Lærere', id: 5, parentId: null },
 
+
+        // Modul1
         { name: 'Team 1', id: 1001, parentId: 1 },
         { name: 'Team 2', id: 1002, parentId: 1 },
         { name: 'Team 3', id: 1003, parentId: 1 },
         { name: 'Team 4', id: 1004, parentId: 1 },
 
+        // Modul2
         { name: 'Team 1', id: 1005, parentId: 2 },
         { name: 'Team 2', id: 1006, parentId: 2 },
         { name: 'Team 3', id: 1007, parentId: 2 },
         { name: 'Team 4', id: 1008, parentId: 2 },
 
+        // Modul3
         { name: 'Team 1', id: 1009, parentId: 3 },
         { name: 'Team 2', id: 1010, parentId: 3 },
         { name: 'Team 3', id: 1011, parentId: 3 },
         { name: 'Team 4', id: 1012, parentId: 3 },
 
+
+        // Teachers 
         { name: 'Linn', id: 2001, parentId: 5, username: 'Linn', password: 'hemmelig', isAdmin: true, },
         { name: 'Terje', id: 2002, parentId: 5, username: 'Terje', password: 'hemmelig', isAdmin: true, },
         { name: 'Joakim', id: 2003, parentId: 5, username: 'Joakim', password: 'hemmelig', isAdmin: true, },
         { name: 'Therese', id: 2004, parentId: 5, username: 'Therese', password: 'hemmelig', isAdmin: true, },
         { name: 'a', id: 2005, parentId: 5, username: 'a', password: 'a', isAdmin: true, },
 
+        // Students
         { name: 'Alexander', id: 3001, parentId: 1001, username: 'Alexander', password: 'hemmelig' },
         { name: 'Emil', id: 3002, parentId: 1001, username: 'Emil', password: 'hemmelig' },
         { name: 'Lina', id: 3003, parentId: 1001, username: 'Lina', password: 'hemmelig' },
@@ -80,10 +88,11 @@ const model = {
 
     ],
     questions: [
-        { text: 'Bra dag?', id: 1 },
-        { text: 'What\'s up modul 2?', id: 2, entityId: 2 }, // course: 1
-        { text: 'What\'s up modul Team 3 i modul 2?', id: 1, entityId: 3 }, // team: 1
-        { text: 'What\'s up Lina?', id: 1, entityId: 6, date: '2021-05-10' }, // student: 1
+        { text: 'Bra dag?', slider: false, id: 1, parentId: 3002, date: '21.06.2021', },
+        { text: 'Bra dag?', slider: false, id: 2, parentId: 1001, date: '', },
+        { text: 'Bra dag?', slider: false, id: 3, parentId: 3, date: '', },
+
+
     ],
     answers: [
         { Elev: 'Alexander', test: 'Jo, takk -bra.', id: 1, questionId: 1, entityId: 6, teachersComment: 'Godt å høre!' },
