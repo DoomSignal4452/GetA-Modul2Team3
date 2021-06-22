@@ -54,8 +54,8 @@ function createTeamOptions(teams) {
 
             for(var i = 0;i<teams.length;i++) {
                 html+=
-                `<option>${teams[i].name}<option>`
-        
+                `<option>${teams[i].name}</option>`
+
                 counter++;
             };
             console.log(html)
@@ -75,9 +75,9 @@ function createDropDownTeam(){
             console.log(getEleverFromParentEntity);
             return dropDowns = `
             <select  id="selectTeam" class="large">   
-                <option unselected selected>All teams</option>        
+                <option unselected selected>All teams</option>
                 ${createTeamOptions(getEleverFromParentEntity)}
-            </select>
+                </select>
             `; 
         }
 
