@@ -45,16 +45,24 @@
 
 function createTeamOptions(teams) {
     let teamOptions = '';
+    let counter=0;
+    let html=``;
 
     if ((model.inputs.adminQmodelPage.modulCheckbox.modul1 == 'checked') ||
         (model.inputs.adminQmodelPage.modulCheckbox.modul2 == 'checked') || 
         (model.inputs.adminQmodelPage.modulCheckbox.modul3 == 'checked')) {
 
-        return teamOptions = `
-        <option>${getAllIdsForOneEntity()}<option>
+            for(var i = 0;i<teams.length;i++) {
+                html+=
+                `<option>${teams[i].name}<option>`
         
-        `;
+                counter++;
+            };
+            console.log(html)
     }
+
+
+    return html;
 }
 
 

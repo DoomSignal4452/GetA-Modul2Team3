@@ -162,7 +162,7 @@ function updateViewAdminQ(hei) {
             
             <div class="dropbox">
                 <input id="teamCheckbox"  class="checkbox" type="checkbox" />
-                ${createDropDownTeam()}
+                    ${createDropDownTeam()}
             </div>
 
             <br>

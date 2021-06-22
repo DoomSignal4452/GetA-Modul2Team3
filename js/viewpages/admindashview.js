@@ -145,18 +145,13 @@ function updateViewAdminDash() {
             
             `;
 
-
-        
         const teams = getChildren(modulEntity);
-        
 
         let counter2 = 0;
-        
- 
+
         for(let team of teams){
             counter2++;
-            
-            
+
             html += `<div>
                         <h3>${team.name}</h3>`;
             const students = getChildren(team);
@@ -165,14 +160,10 @@ function updateViewAdminDash() {
                 html += `<li>${student.name}</li>`;
             }
 
-
             html += `</div></div>`;
         }
         html += `</div></div></div>`;
-       
     }
-
-   
 
     html += '</div></div>'
     document.getElementById('app').innerHTML = html;
