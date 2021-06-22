@@ -135,13 +135,6 @@ function modulChecked(s) {
 //    else { return M1Elev; }
 //}
 
-function getChildren(entity) {
-    let children = model.entities.filter(e => e.parentId === entity.id);
-    console.log(children);
-    return children;
-}
-
-// ###############  Test
 
 function createElevOptions(teams) {
     let html = ``;
@@ -203,26 +196,3 @@ function createDropDownElever() {
                 </select>`;
     } else return dropDowns = 'Velg en Modul';
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-// ########################
-
-function getElevFromTeamEntity(modul, team) {
-    // Modul1: 
-
-    let eleverFromTeam = model.entities.filter(p => ((p.parentId == 1001) && ((3001 <= p.id) && (p.id <= 3005))));
-    console.log(eleverFromTeam);
-}
-
-
