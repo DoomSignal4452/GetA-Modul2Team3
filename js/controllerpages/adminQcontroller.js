@@ -44,8 +44,6 @@
 // }
 
 function createTeamOptions(teams) {
-    let teamOptions = '';
-    let counter=0;
     let html=``;
 
     if ((model.inputs.adminQmodelPage.modulCheckbox.modul1 == 'checked') ||
@@ -55,16 +53,10 @@ function createTeamOptions(teams) {
             for(var i = 0;i<teams.length;i++) {
                 html+=
                 `<option>${teams[i].name}</option>`
-
-                counter++;
             };
-            console.log(html)
     }
-
-
     return html;
 }
-
 
 function createDropDownTeam(){
     let getEleverFromParentEntity = null;
@@ -72,7 +64,7 @@ function createDropDownTeam(){
         if (model.inputs.adminQmodelPage.modulCheckbox.modul1 == 'checked') {      
             let dropDowns = '';
             getEleverFromParentEntity =  model.entities.filter(p => p.parentId == 1) ;
-            console.log(getEleverFromParentEntity);
+            //console.log(getEleverFromParentEntity);
             return dropDowns = `
             <select  id="selectTeam" class="large">   
                 <option unselected selected>All teams</option>
@@ -83,7 +75,7 @@ function createDropDownTeam(){
 
         if (model.inputs.adminQmodelPage.modulCheckbox.modul2 == 'checked') {   
             getEleverFromParentEntity =  model.entities.filter(p => p.parentId == 2) ;
-            console.log(getEleverFromParentEntity);
+            //console.log(getEleverFromParentEntity);
             return dropDowns = `
             <select  id="selectTeam" class="large">   
                 <option unselected selected>All teams</option>        
@@ -95,7 +87,7 @@ function createDropDownTeam(){
 
         if (model.inputs.adminQmodelPage.modulCheckbox.modul3 == 'checked') {
             getEleverFromParentEntity =  model.entities.filter(p => p.parentId == 3) ;
-            console.log(getEleverFromParentEntity);
+            //console.log(getEleverFromParentEntity);
             return dropDowns = `
             <select  id="selectTeam" class="large">
                 <option unselected selected>All teams</option>
