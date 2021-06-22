@@ -1,9 +1,9 @@
-function updateViewAdminQ(hei) {
-    let html = `
-    
-    <div id="adminLog">
-        <div id="logWeekThemeElev">
-            <h3>Week Theme </h3>             
+
+
+function updateViewAdminDash() {
+    console.log('updateViewAdminDash is running')
+    let html = `        <div id=adminDashPage>
+            <div id="weekTheme"><h3>Week Theme </h3>             
             <div id="pinnedWeekThemeModul2">
                 <h2> Week5: Locus of Control</h2> 
 
@@ -124,81 +124,72 @@ function updateViewAdminQ(hei) {
         </div>
     </div>
 
-    </div> 
-    </div>
+    </div> </div>
+            <div>
+    `;
 
+    // modul3Collapse
 
+    let counter = 0;
+    for (let modulEntity of getTopLevelEntities()) {
+        counter++;
+        let moduleName = 'modul' + `${counter}`;
+        let moduleCollapseName = 'modul' + `${counter}` + 'Collapse';
 
-    
-    
-    <div id="makeQuestions">
-        <div id="addQuestion">     
-            <div id="addQuestionText">
-                <p class="newQ" style="float:left; margin-left: 0.2vw;">Legg til spørsmål</p> 
-                <p> <button id="addQuestionButton"> + </button> 
-                </p> 
-            </div>
-        </div>
-
-         <div id="qToModules" class="large">
-            <div class="modulbox">Modul 1
-                <input ${model.inputs.adminQmodelPage.modulCheckbox.modul1} onclick="modulChecked(1)" id="modul1" value="${model.inputs.adminQmodelPage.modulCheckbox.modul1}" class="checkbox" type="checkbox" />
-            </div>
-     
-
+        html += `
+            <div class="moduler" id=${moduleName} onclick="collapse(this.id)">
+                <div id=temp class="modulHeader">
+                    <h2>${modulEntity.name}</h2>
+                
+                    <div id="${moduleCollapseName}">
             
-            <div class="modulbox">Modul 2
-                <input ${model.inputs.adminQmodelPage.modulCheckbox.modul2} onclick="modulChecked(2)" id="modul2" value="${model.inputs.adminQmodelPage.modulCheckbox.modul2}" class="checkbox" type="checkbox" />
-            </div>
-      
+            `;
 
-            <div class="modulbox">Modul 3
-                <input ${model.inputs.adminQmodelPage.modulCheckbox.modul3} onclick="modulChecked(3)" id="modul3" value="${model.inputs.adminQmodelPage.modulCheckbox.modul3}" class="checkbox" type="checkbox" />
-            </div>
 
-            <br>
+        
+        const teams = getChildren(modulEntity);
+        
 
-         
+        let counter2 = 0;
+        
+ 
+        for(let team of teams){
+            counter2++;
             
-            <div class="dropbox">
-                <input id="teamCheckbox"  class="checkbox" type="checkbox" />
-                ${createDropDownTeam()}
-            </div>
-
-            <br>
-            <div class="dropbox">
-                <input  class="checkbox" type="checkbox" />
-
-            </div>
+            
+            html += `<div>
+                        <h3>${team.name}</h3>`;
+            const students = getChildren(team);
+            html += '<div>'
+            for(let student of students){
+                html += `<li>${student.name}</li>`;
+            }
 
 
+            html += `</div></div>`;
+        }
+        html += `</div></div></div>`;
+       
+    }
 
+   
 
+    html += '</div></div>'
+    document.getElementById('app').innerHTML = html;
 
-
-
-
-
-            <div class="modulbox">add slidebar
-                <input  class="checkbox" type="checkbox" />
-            </div>
-
-            <input type="date">            
-            <button id="addnow">Lagre Spørsmål</button> 
-         
-         </div>
-    </div>
+};
 
 
 
 
+/* <div id="modul1" onclick="collapse(this.id)">Modul1>
+    <div id="modul1Collapse"> Content1 </div>
+</div>
 
+<div id="modul2" onclick="collapse(this.id)">Modul1>
+    <div id="modul2Collapse"> Content2 </div>
+</div>
 
-
-
-    
-
-`;
-document.getElementById('app').innerHTML = html;
-}
-
+<div id="modul3" onclick="collapse(this.id)">Modul1>
+    <div id="modul3Collapse"> Content3 </div>
+</div> */
