@@ -168,7 +168,7 @@ function updateViewAdminQ(hei) {
             <br>
             <div class="dropbox">
                 <input  class="checkbox" type="checkbox" />
-
+                ${createDropDownElever()}
             </div>
 
 

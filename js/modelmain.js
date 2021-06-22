@@ -86,6 +86,28 @@ const model = {
         { name: 'Marius', id: 3004, parentId: 1001, username: 'Marius', password: 'hemmelig' },
         { name: 'e', id: 3005, parentId: 1001, username: 'e', password: 'e' },
 
+        { name: 'ElevT2M1', id: 3004, parentId: 1002, username: 'Marius', password: 'hemmelig' },
+
+        { name: 'ElevT3M1', id: 3004, parentId: 1003, username: 'Marius', password: 'hemmelig' },
+
+        { name: 'ElevT4M1', id: 3004, parentId: 1004, username: 'Marius', password: 'hemmelig' },
+
+        { name: 'ElevT1M2', id: 3004, parentId: 1005, username: 'Marius', password: 'hemmelig' },
+
+        { name: 'ElevT2M2', id: 3004, parentId: 1006, username: 'Marius', password: 'hemmelig' },
+
+        { name: 'ElevT3M2', id: 3004, parentId: 1007, username: 'Marius', password: 'hemmelig' },
+
+        { name: 'ElevT4M2', id: 3004, parentId: 1008, username: 'Marius', password: 'hemmelig' },
+
+        { name: 'ElevT1M3', id: 3004, parentId: 1009, username: 'Marius', password: 'hemmelig' },
+
+        { name: 'ElevT2M3', id: 3004, parentId: 1010, username: 'Marius', password: 'hemmelig' },
+
+        { name: 'ElevT3M3', id: 3004, parentId: 1011, username: 'Marius', password: 'hemmelig' },
+
+        { name: 'ElevT4M3', id: 3004, parentId: 1012, username: 'Marius', password: 'hemmelig' },
+
     ],
     questions: [
         { text: 'Bra dag?', slider: false, id: 1, parentId: 3002, date: '21.06.2021', },
