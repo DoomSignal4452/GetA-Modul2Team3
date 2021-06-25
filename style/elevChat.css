@@ -3,6 +3,7 @@
   grid-template-columns: 2fr 2fr;
   gap: 5px;
   margin-top: 5px;
+  background-color: #aabeff;
 }
 
 #elevNotes {

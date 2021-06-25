@@ -31,7 +31,8 @@ body {
 
 /* Navigattion Bar */
 div.headerWrap {
-  background-color: rgb(128, 128, 128);
+  background-color: rgb(17, 17, 17);
+  color: white;
   margin: 10px;
   text-align: center;
 }
@@ -42,7 +43,7 @@ div.headerTop {
 }
 
 div.headerBot {
-  background-color: rgb(190, 190, 190);
+  background-color: rgb(146, 172, 255);
   height: 40px;
 }
 
@@ -51,7 +52,7 @@ div.headerBot {
 }
 
 .navBar a.aHeader {
-  color: rgb(26, 26, 26);
+  color: rgb(255, 255, 255);
   float: left;
   font-size: 16px;
   font-weight: bold;
@@ -69,7 +70,8 @@ div.headerBot {
 }
 
 .hoverRed:hover a:hover {
-  background-color: rgb(218, 218, 218);
+  background-color: rgb(255, 145, 1);
+  color: white;
   height: 16px;
 }
 
@@ -85,7 +87,7 @@ h2 {
 }
 
 #weekTheme {
-  background-color: gray;
+  background-color: #aabeff;
   /*margin-right: 10%;*/
 }
 
@@ -98,7 +100,7 @@ h2 {
 
 #weekThemeElev {
   grid-area: weekThemeElev;
-  background-color: gray;
+  background-color: #aabeff;
   text-align: center;
   display: grid;
   grid-template-rows: 0.3fr 1.5fr 4fr;
@@ -113,6 +115,8 @@ h2 {
 #pinnedWeekThemeModul2 {
   margin: 5px;
   border: solid black 2px;
+  background-color: rgba(24, 64, 83, 0.6);
+  color: white;
   width: auto;
 }
 
@@ -137,7 +141,7 @@ h2 {
 
 #logWeek {
   display: grid;
-  background-color: gray;
+  background-color: #aabeff;
   height: 300px;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
   gap: 10px;
@@ -150,24 +154,45 @@ h2 {
 }
 
 .logdays {
-  background-color: rgb(194, 194, 194);
+  background-color: rgb(236, 232, 232);
   text-align: center;
   padding-top: 10px;
 }
 
 .logdays:hover {
-  background-color: rgb(172, 172, 172);
+  background-color: rgb(250, 175, 114);
+  color: white;
 }
 
 .moduler {
   background-color: gray;
   min-height: 20px;
   margin-bottom: 20px;
-  list-style: none;
 }
 
 .modulHeader {
   min-height: 20px;
+  background-color: rgb(255, 255, 255);
+  box-shadow: black 2px 2px;
+  text-align: center;
+}
+
+#mHeader {
+  background-color: rgb(255, 123, 0);
+  color: rgb(255, 255, 255);
+}
+
+#teamHeader {
+  color: rgb(255, 255, 255);
+  background-color: rgb(87, 100, 129);
+}
+
+#teamContainer {
+  background-color: rgb(255, 255, 255);
+  margin: 5px;
+  width: 200px;
+  border: solid black 2px;
+  box-shadow: black 2px 2px;
 }
 
 .innerModulGrid {
@@ -179,80 +204,92 @@ h2 {
   display: none;
 }
 
+.changeDisplay {
+  display: flex;
+}
 
 /* AdminQ */
 
 .modulbox {
   margin-top: 1mm;
   margin-left: 1mm;
-  background-color: rgb(212, 212, 212);
+  background-color: rgb(255, 179, 136);
+  border: solid black 2px;
   width: 5cm;
 }
 
 .dropbox {
   margin-top: 1mm;
   margin-left: 1mm;
-  background-color: rgb(212, 212, 212);
+  background-color: rgb(255, 179, 136);
+  border: solid black 2px;
   width: 5cm;
+}
+
+#questionDate {
+  background-color: rgb(255, 179, 136);
+  border: solid black 2px;
+  color: white;
+  margin: 2px;
 }
 
 
 /* ######################## NEW COLOURS ######################## */
 html, body {
-    margin: 0;
+  margin: 0;
 }
 
 #app {
 
-    width: auto;
-    margin: auto;
+  width: auto;
+  margin: auto;
 }
 
 #adminDashPage {
-    min-height: 20cm;
+  min-height: 20cm;
 }
 
 .modulBox {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    background-color: rgb(155, 155, 155);
-    border-bottom-left-radius: 4mm;
-    border-bottom-right-radius: 4mm;
-    
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  background-color: rgb(155, 155, 155);
+  border-bottom-left-radius: 4mm;
+  border-bottom-right-radius: 4mm;
+  
 }
 
 .moduler {
-    border-radius: 4mm;
-    min-width: 20cm;
-    max-width: 30cm;
+  border-radius: 4mm;
+  min-width: 20cm;
+  max-width: 30cm;
 }
 
 .modulHeader {
-    cursor: pointer;
-    padding: 1mm;
+  cursor: pointer;
+  padding: 1mm;
 }
 
 h2 {
-    margin-left: 1mm;
+  margin-left: 1mm;
 }
 
 .noselect {
-    -webkit-touch-callout: none; /* iOS Safari */
-      -webkit-user-select: none; /* Safari */
-       -khtml-user-select: none; /* Konqueror HTML */
-         -moz-user-select: none; /* Old versions of Firefox */
-          -ms-user-select: none; /* Internet Explorer/Edge */
-              user-select: none; /* Non-prefixed version, currently
-                                    supported by Chrome, Edge, Opera and Firefox */
-  }
+  -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+     -khtml-user-select: none; /* Konqueror HTML */
+       -moz-user-select: none; /* Old versions of Firefox */
+        -ms-user-select: none; /* Internet Explorer/Edge */
+            user-select: none; /* Non-prefixed version, currently
+                                  supported by Chrome, Edge, Opera and Firefox */
+}
 
 .teamBox {
-    margin: 2mm;
-    background-color: rgb(182, 182, 182);
-    padding: 2mm;
-    border-radius: 4mm;
+  margin: 2mm;
+  background-color: rgb(182, 182, 182);
+  padding: 2mm;
+  border-radius: 4mm;
 }
 
 .weelky {
-    height: 100%;
+  height: 100%;
 }

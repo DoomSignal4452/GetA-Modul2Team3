@@ -5,7 +5,7 @@
 }
 
 #logWeekThemeElev {
-  background-color: gray;
+  background-color: #aabeff;
   text-align: center;
   display: grid;
   grid-template-rows: 0.3fr 1.5fr 4fr;
@@ -17,18 +17,19 @@
 }
 
 #logInputs {
-  background-color: gray;
+  background-color: lightgrey;
   height: 90%;
 }
 
 #Questions {
   margin: 20px;
-  background: rgb(146, 146, 146);
+  background: rgb(148, 168, 182);
   height: 200px;
 }
 
 #Qheader {
-  background: rgb(111, 116, 107);
+  background: #ff7b00;
+  color: aliceblue;
   height: 25px;
   text-align: center;
   padding-top: 7px;

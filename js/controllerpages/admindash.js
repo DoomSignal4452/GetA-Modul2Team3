@@ -10,22 +10,18 @@ function collapse(modulId) {
         document.getElementById('modul1Collapse').classList.toggle('collapse');
         document.getElementById('modul1Collapse').classList.toggle('modulBox');
     }
-
     else if (modulId == 'modul2') {
         document.getElementById('modul2Collapse').classList.toggle('collapse');
         document.getElementById('modul2Collapse').classList.toggle('modulBox');
     }
-
     else if (modulId == 'modul3') {
         document.getElementById('modul3Collapse').classList.toggle('collapse');
         document.getElementById('modul3Collapse').classList.toggle('modulBox');
-    }   
-
+    }
     else if (modulId == 'modul5') {
         document.getElementById('modul5Collapse').classList.toggle('collapse');
         document.getElementById('modul5Collapse').classList.toggle('modulBox');
     }
-
 }
 
 

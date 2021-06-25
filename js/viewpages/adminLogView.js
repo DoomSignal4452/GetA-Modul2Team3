@@ -142,28 +142,24 @@ function updateViewAdminLogg() {
                  
 
                     <div id="Questions">
-                        <div id="Qheader"></div>
+                        <div id="Qheader">Hvordan har uken din gått?</div>
                         <textarea id="Qreply" placeholder="Elevsvar her"></textarea>
                         <textarea id="Qcomment" placeholder="Admin comments her"></textarea>
                     </div>
 
                     <div id="Questions">
-                        <div id="Qheader"></div>
+                        <div id="Qheader">HVordan fungerer teamet ditt?</div>
                         <textarea id="Qreply" placeholder="Elevsvar her"></textarea>
                         <textarea id="Qcomment" placeholder="Admin comments her"></textarea>
                     </div>
 
                     <div id="Questions">
-                        <div id="Qheader"></div>
+                        <div id="Qheader">Hva kan du forbedre til neste uke?</div>
                         <textarea id="Qreply" placeholder="Elevsvar her"></textarea>
                         <textarea id="Qcomment" placeholder="Elevsvar her"></textarea>
                     </div>
             </div>
         </div>
-   
-
-                 
-          
             </div>
         </div>
     </div>

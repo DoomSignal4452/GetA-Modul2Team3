@@ -127,6 +127,10 @@ function updateViewAdminQ(hei) {
     </div> 
     </div>
 
+
+
+    
+    
     <div id="makeQuestions">
         <div id="addQuestion">     
             <div id="addQuestionText">
@@ -136,40 +140,41 @@ function updateViewAdminQ(hei) {
             </div>
         </div>
 
-        <div id="qToModules" class="large">
-            <div class="modulbox">Modul 1
-                <input ${model.inputs.adminQmodelPage.modulCheckbox.modul1} onclick="modulChecked(1)" id="modul1" value="${model.inputs.adminQmodelPage.modulCheckbox.modul1}" class="checkbox" type="checkbox" />
+         <div id="qToModules" class="large">
+            <div id="writeQuestion">
+                <input id="questionText" type="text" placeholder="Spørsmålstekst"/>
             </div>
 
-            <div class="modulbox">Modul 2
-                <input ${model.inputs.adminQmodelPage.modulCheckbox.modul2} onclick="modulChecked(2)" id="modul2" value="${model.inputs.adminQmodelPage.modulCheckbox.modul2}" class="checkbox" type="checkbox" />
-            </div>
 
-            <div class="modulbox">Modul 3
-                <input ${model.inputs.adminQmodelPage.modulCheckbox.modul3} onclick="modulChecked(3)" id="modul3" value="${model.inputs.adminQmodelPage.modulCheckbox.modul3}" class="checkbox" type="checkbox" />
-            </div>
+            <div id="checkboxContainer">
+                <div class="modulbox">Modul 1
+                    <input ${model.inputs.adminQmodelPage.modulCheckbox.modul1} onclick="modulChecked(1)" id="modul1" value="${model.inputs.adminQmodelPage.modulCheckbox.modul1}" class="checkbox" type="checkbox" />
+                </div>
+                <div class="dropbox">
+                    ${createDropDownTeam()} 
+                    <input id="teamCheckbox"  class="checkbox" type="checkbox" />
+                </div>
 
-            <br>
+                <input id="questionDate" type="date">  
 
-            <div class="dropbox">
-                <input id="teamCheckbox"  class="checkbox" type="checkbox" />
-                    ${createDropDownTeam()}
-            </div>
-
-            <br>
-            <div class="dropbox">
-                <input  class="checkbox" type="checkbox" />
-                ${createDropDownElever()}
-            </div>
-
-            <div class="modulbox">add slidebar
-                <input  class="checkbox" type="checkbox" />
-            </div>
-
-            <input type="date">            
-            <button id="addnow">Lagre Spørsmål</button> 
-         </div>
-    </div>
+                <div class="modulbox">Modul 2 
+                    <input ${model.inputs.adminQmodelPage.modulCheckbox.modul2} onclick="modulChecked(2)" id="modul2" value="${model.inputs.adminQmodelPage.modulCheckbox.modul2}" class="checkbox" type="checkbox" />
+                </div>
+                <div class="dropbox">
+                    ${createDropDownElever()}  
+                    <input  class="checkbox" type="checkbox" />
+                </div>
+                <div></div>
+                <div class="modulbox">Modul 3 
+                    <input ${model.inputs.adminQmodelPage.modulCheckbox.modul3} onclick="modulChecked(3)" id="modul3" value="${model.inputs.adminQmodelPage.modulCheckbox.modul3}" class="checkbox" type="checkbox" />
+                </div>
+                <div class="modulbox">add slidebar 
+                    <input  class="checkbox" type="checkbox" />
+                </div>
+                <button id="addnow">Save</button> 
+                </div>
+            </div>    
+        </div>
 
 
 

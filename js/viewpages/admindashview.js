@@ -3,7 +3,7 @@
 function updateViewAdminDash() {
     console.log('updateViewAdminDash is running')
     let html = `        <div id=adminDashPage>
-            <div id="weekTheme" class="weelky"><h3>Week Theme </h3>             
+            <div id="weekTheme"><h3>Week Theme </h3>             
             <div id="pinnedWeekThemeModul2">
                 <h2> Week5: Locus of Control</h2> 
 
@@ -142,8 +142,7 @@ function updateViewAdminDash() {
                     <div id="${moduleName}" class="modulHeader" onclick="collapse(this.id)">
                         <h2>${modulEntity.name}</h2>
                     </div>
-                    <div id="${moduleCollapseName}" class="modulBox">
-            
+                <div id="${moduleCollapseName}" class="modulBox">
             `;
 
         const teams = getChildren(modulEntity);
@@ -153,15 +152,14 @@ function updateViewAdminDash() {
         for(let team of teams){
             counter2++;
 
-            html += `<div class="teamBox">
-                        <h3>${team.name}</h3>`;
+            html += `<div id="teamContainer"  class="teamBox">
+                        <h3 id="teamHeader">${team.name}</h3>`;
             const students = getChildren(team);
-            html += '<div>'
-            for(let student of students){
-                html += `<li>${student.name}</li>`;
+                for(let student of students){
+                html += `<div>${student.name}</div>`;
             }
 
-            html += `</div></div>`;
+            html += `<div></div></div>`;
         }
         html += `</div></div></div>`;
     }

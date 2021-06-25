@@ -1,6 +1,6 @@
 const model = {
     app: {
-        currentPage: 'admindash',
+        currentPage: 'elevDash',
         currentLogInn: '',
     },
     inputs: {
@@ -58,7 +58,6 @@ const model = {
         { name: 'Team 2', id: 1002, parentId: 1 },
         { name: 'Team 3', id: 1003, parentId: 1 },
         { name: 'Team 4', id: 1004, parentId: 1 },
-        
 
         // Modul2
         { name: 'Team 1', id: 1005, parentId: 2 },
