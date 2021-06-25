@@ -118,6 +118,10 @@ function modulChecked(s) {
     updateView();
 }
 
+function addQuestionToArray() {
+    model.questions.push()
+}
+
 //function createDropDownElev() {
 //    let isChecked = model.inputs.adminQmodelPage.modulCheckbox;
 //    let M1Elev = '';

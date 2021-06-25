@@ -88,7 +88,6 @@ h2 {
 
 #weekTheme {
   background-color: #aabeff;
-  /*margin-right: 10%;*/
 }
 
 #adminDashPage {
@@ -132,8 +131,6 @@ h2 {
   margin: 10px;
   display: grid;
   gap: 10px;
-  /*margin: 10px;*/
-  /*grid-template-columns: 2fr 8fr;*/
   grid-template-areas:
     "weekThemeElev logWeek logWeek logWeek logWeek logWeek"
     "weekThemeElev chatNotes chatNotes chatNotes chatNotes chatNotes";
@@ -245,6 +242,26 @@ html, body {
   margin: auto;
 }
 
+h2 {
+  margin-left: 1mm;
+}
+
+.noselect {
+  -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+     -khtml-user-select: none; /* Konqueror HTML */
+       -moz-user-select: none; /* Old versions of Firefox */
+        -ms-user-select: none; /* Internet Explorer/Edge */
+            user-select: none; /* Non-prefixed version, currently
+                                  supported by Chrome, Edge, Opera and Firefox */
+}
+
+.weelky {
+  height: 100%;
+}
+
+/* ##### Admin Dash ##### */
+
 #adminDashPage {
   min-height: 20cm;
 }
@@ -269,27 +286,9 @@ html, body {
   padding: 1mm;
 }
 
-h2 {
-  margin-left: 1mm;
-}
-
-.noselect {
-  -webkit-touch-callout: none; /* iOS Safari */
-    -webkit-user-select: none; /* Safari */
-     -khtml-user-select: none; /* Konqueror HTML */
-       -moz-user-select: none; /* Old versions of Firefox */
-        -ms-user-select: none; /* Internet Explorer/Edge */
-            user-select: none; /* Non-prefixed version, currently
-                                  supported by Chrome, Edge, Opera and Firefox */
-}
-
 .teamBox {
   margin: 2mm;
   background-color: rgb(182, 182, 182);
   padding: 2mm;
   border-radius: 4mm;
-}
-
-.weelky {
-  height: 100%;
 }

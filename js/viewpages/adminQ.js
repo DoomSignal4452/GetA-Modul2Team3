@@ -142,7 +142,7 @@ function updateViewAdminQ(hei) {
 
          <div id="qToModules" class="large">
             <div id="writeQuestion">
-                <input id="questionText" type="text" placeholder="Spørsmålstekst"/>
+                <input ${model.questions.text} value="${model.questions.text}" id="questionText" type="text" placeholder="Spørsmålstekst"/>
             </div>
 
 

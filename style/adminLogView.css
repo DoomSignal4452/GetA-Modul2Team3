@@ -20,10 +20,6 @@
 }
 
 #makeQuestions {
-  /* position: absolute;
-    right: 20px;
-    top: 20px;
-     */
   background-color: #aabeff;
   height: 90%;
   padding-top: 5mm;
@@ -43,28 +39,16 @@
   height: 30px;
   width: 30px;
   font-size: x-large;
-  /*margin-right: 10px;*/
-  /*margin-bottom: 10px;*/
-  /* text-align: center; */
-
-  /*right: 1vw;*/
-
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
 #addQuestionText {
-  /*padding-top: 20px;
-      padding-left: 50px;*/
-  /* position: relative;
-      top: 30%; */
   align-items: center;
 }
 
 .newQ {
-  /* display: flex; */
-  /*height: 200px;*/
   margin-top: 6px;
 }
 
@@ -76,7 +60,6 @@
   margin-top: 2vh;
   height: auto;
   width: 91%;
-
   padding: 2px;
 }
 
