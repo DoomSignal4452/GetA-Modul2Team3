@@ -1,0 +1,24 @@
+
+.modulbox {
+    margin-top: 1mm;
+    margin-left: 1mm;
+    background-color: rgb(255, 179, 136);
+    border: solid black 2px;
+    width: 5cm;
+}
+
+.dropbox {
+    margin-top: 1mm;
+    margin-left: 1mm;
+    background-color: rgb(255, 179, 136);
+    border: solid black 2px;
+    width: 5cm;
+}
+
+#questionDate {
+    background-color: rgb(255, 179, 136);
+    border: solid black 2px;
+    color: white;
+    margin: 2px;
+}
+

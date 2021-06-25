@@ -5,31 +5,38 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Logg</title>
-    <script src="js/viewpages/header.js"></script>
-    <script src="js/modelmain.js"></script>
-    <script src="js/viewpages/loginview.js"></script>
-    <script src="js/viewpages/admindashview.js"></script>
-    <script src="js/viewpages/elevdashview.js"></script>
-    <script src="js/controllerpages/login.js"></script>
-    <script src="js/controllerpages/admindash.js"></script>
-    <script src="js/controllerpages/elevcontroller.js"></script>
-    <script src="js/viewpages/elevLogView.js"></script>
-    <script src="js/viewpages/adminLogView.js"></script>
-    <script src="js/viewpages/adminQ.js"></script>
-    <script src="js/controllerpages/adminQcontroller.js"></script>
-<!--<script src="LoggInputView.js"></script>
-    <script src="LoggInputView.js"></script>
-    <script src="LoggInputView.js"></script>
-    <script src="LoggInputView.js"></script>
-    <script src="LoggInputView.js"></script>
-    <script src="LoggInputView.js"></script> -->
-    
-    <link rel="stylesheet" href="style/main.css">
-    <link rel="stylesheet" href="Calendar/calendar.css">
-    <link rel="stylesheet" href="style/elevChat.css">
-    <link rel="stylesheet" href="style/logStyles.css">
-    <link rel="stylesheet" href="style/adminLogView.css">
 
+    <!--#### Model ####-->
+    <script src="js/modelmain.js"></script>
+
+    <!--#### Controller ####-->
+    <script src="js/controllerpages/login.js"></script>
+    <script src="js/controllerpages/adminDash.js"></script>
+    <script src="js/controllerpages/adminQcontroller.js"></script>
+    <script src="js/controllerpages/elevcontroller.js"></script>
+
+    <!--#### View ####-->
+    <script src="js/viewpages/header.js"></script>
+    <script src="js/viewpages/calendar.js"></script>
+
+    <script src="js/viewpages/login.js"></script>
+    <script src="js/viewpages/admindashview.js"></script>
+    <script src="js/viewpages/adminQ.js"></script>
+    <script src="js/viewpages/adminLogView.js"></script>
+    <script src="js/viewpages/elevdashview.js"></script>
+    <script src="js/viewpages/elevLogView.js"></script>
+
+    <!--#### Style ####-->
+    <link rel="stylesheet" href="style/general.css">
+
+    <link rel="stylesheet" href="style/calendar.css">
+
+    <link rel="stylesheet" href="style/login.css">
+    <link rel="stylesheet" href="style/adminDash.css">
+    <link rel="stylesheet" href="style/adminMakeQuest.css">
+    <link rel="stylesheet" href="style/adminReadQuest.css">
+    <link rel="stylesheet" href="style/elevDash.css">
+    <link rel="stylesheet" href="style/elevQuest.css">
 
 </head>
 <body>
@@ -48,8 +55,6 @@
             if(model.app.currentPage == "adminQ") {updateViewAdminQ(); ViewAdminHeader();};           
             
         };
-
-        // updateViewAdminLogg
 
     </script>
 </body>

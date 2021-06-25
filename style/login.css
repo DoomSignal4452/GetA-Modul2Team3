@@ -1,0 +1,27 @@
+
+#LoginPage {
+    display: grid;
+    grid-template-rows: 3fr 1fr 1fr 1fr;
+    margin: auto;
+    width: 200px;
+    margin-top: 250px;
+}
+
+#logo {
+    text-align: center;
+    width: 54mm;
+    height: 23mm;
+    padding-bottom: 5mm;
+}
+
+.logInput {
+    width: 200px;
+    height: 20px;
+}
+
+.buttons {
+    display: grid;
+    grid-template-columns: 2fr 2fr;
+    gap: 10px;
+}
+

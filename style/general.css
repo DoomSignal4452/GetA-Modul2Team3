@@ -1,0 +1,120 @@
+body {
+    background-color: rgb(221, 232, 255);
+    font-family: Helvetica;
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+#app {
+    width: auto;
+    margin: auto;
+}
+
+h2 {
+    margin-top: 0;
+    margin-left: 1mm;
+}
+
+.noselect {
+    -webkit-touch-callout: none; /* iOS Safari */
+      -webkit-user-select: none; /* Safari */
+       -khtml-user-select: none; /* Konqueror HTML */
+         -moz-user-select: none; /* Old versions of Firefox */
+          -ms-user-select: none; /* Internet Explorer/Edge */
+              user-select: none; /* Non-prefixed version, currently
+                                    supported by Chrome, Edge, Opera and Firefox */
+}
+
+
+
+
+
+
+/* #####       Navigattion Bar       ##### */
+div.headerWrap {
+    background-color: rgb(92, 92, 92);
+    background-color: rgb(203, 214, 238);
+    color: white;
+    /*margin: 10px;*/
+    text-align: center;
+}
+
+div.headerTop {
+    height: 60px;
+    padding: 10px;
+}
+
+div.headerBot {
+    background-color: rgb(175, 194, 236);
+    height: 40px;
+}
+
+.navBar {
+    height: 40px;
+}
+
+.navBar .aHeader {
+    color: rgb(56, 56, 56);
+    float: left;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+    padding: 12px 12px;
+    text-decoration: none;
+}
+
+.floatRight {
+    float: right;
+}
+
+.aHeader:hover {
+    background-color: rgb(255, 145, 1);
+    color: white;
+    height: 16px;
+    cursor: pointer;
+}
+
+.headerLogo {
+    float: center;
+    width: 4cm;
+}
+
+/* #####       End Navigation Bar       ##### */
+
+
+
+/* #####       Sidebar/Weekly Theme       ##### */
+
+.weelky {
+    height: 100%;
+}
+
+#weekTheme {
+    background-color: rgb(175, 194, 236);
+}
+
+#weekThemeElev {
+    grid-area: weekThemeElev;
+    background-color: #aabeff;
+    text-align: center;
+    display: grid;
+    grid-template-rows: 0.3fr 1.5fr 4fr;
+}
+
+#calendar {
+    margin: 5px;
+    border: solid black 2px;
+    width: auto;
+}
+
+#pinnedWeekThemeModul2 {
+    margin: 5px;
+    border: solid black 2px;
+    background-color: rgb(120, 136, 170);
+    color: white;
+    width: auto;
+}
+

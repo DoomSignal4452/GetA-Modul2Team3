@@ -1,0 +1,70 @@
+#logWeek {
+    grid-area: logWeek;
+}
+
+#chatNotes {
+    background-color: gray;
+    height: 300px;
+    grid-area: chatNotes;
+}
+
+#elevDashPage {
+    margin: 10px;
+    display: grid;
+    gap: 10px;
+    grid-template-areas:
+      "weekThemeElev logWeek logWeek logWeek logWeek logWeek"
+      "weekThemeElev chatNotes chatNotes chatNotes chatNotes chatNotes";
+}
+
+#logWeek {
+    display: grid;
+    background-color: #aabeff;
+    height: 300px;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    gap: 10px;
+    padding: 2mm;
+}
+
+.logdays {
+  background-color: rgb(236, 232, 232);
+  text-align: center;
+  padding-top: 10px;
+}
+
+.logdays:hover {
+  background-color: rgb(250, 175, 114);
+  color: white;
+}
+
+
+/* ### Elev Chat ###*/
+#chatNotes {
+    display: grid;
+    grid-template-columns: 2fr 2fr;
+    gap: 5px;
+    margin-top: 5px;
+    background-color: #aabeff;
+  }
+  
+  #elevNotes {
+    margin: 10px;
+    border: solid black 2px;
+    height: 85%;
+    padding: 2mm;
+  }
+  
+  #chatBox {
+    border: solid black 2px;
+    height: 75%;
+    width: 95%;
+    background-color: rgb(221, 221, 221);
+    margin: 10px;
+  }
+  
+  #chatInput {
+    width: 75%;
+    height: 7%;
+    margin: 10px;
+  }
+/* ### End Elev Chat ### */

@@ -1,11 +1,17 @@
-// function addQuestion() {
+function addQuestion() {
 
-//     let date = new Date();
-//     let question = {   text: 'Her er et nytt spørsmål', 
-//                         id: 1, 
-//                         parentId: null, 
-//                         date: date, };
-//     model.questions.push(question);
+    let date = new Date().toISOString().substring(0,10);
+
+    let question = {   text: model.inputs.adminQmodelPage.lagSpm, 
+                        id: 1, 
+                        parentId: null, 
+                        date: `${date}`};
+    model.questions.push(question);
+    alert ('Question added successfully');
+    model.inputs.adminQmodelPage.lagSpm = '';
+    updateViewAdminQ();
+
+}
 
 
 // }
@@ -118,9 +124,7 @@ function modulChecked(s) {
     updateView();
 }
 
-function addQuestionToArray() {
-    model.questions.push()
-}
+
 
 //function createDropDownElev() {
 //    let isChecked = model.inputs.adminQmodelPage.modulCheckbox;
@@ -200,3 +204,18 @@ function createDropDownElever() {
                 </select>`;
     } else return dropDowns = 'Velg en Modul';
 }
+
+function addQuestionToArray() {
+    model.questions.push({
+        text: model.questions.text,
+        slider: model.questions.slider,
+        id: model.questions.id,
+        parentId: model.questions.parentId,
+        date: model.questions.date,
+    })
+    alert ('Question added successfully')
+}
+
+
+
+

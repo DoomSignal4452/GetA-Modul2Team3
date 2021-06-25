@@ -13,14 +13,39 @@ function skrivElevNotes() {
 
 
 
-function getValueFromSlider(){      
-        let sliderValue = document.getElementById('myRange').value;
-        document.getElementById('sliderUpdateDivText').innerHTML = sliderValue;    
+function getQuestionsFromArray() {
+    let html = ``;
+    for(let i = 0; i < model.questions.length; i++){
+        let option = model.questions[i].text;
+        html += `
+    <div id="Questions">
+        <div id="Qheader">${option}</div>
+        <textarea id="Qreply"></textarea>
+    </div>
+
+    `;
+}
+return html;
 }
 
 
 
 
+/* function getQuestionsFromArray() {
+    for(let i = 0; i < model.questions.length; i++){
+        let html = ``;
+        let option = model.questions[i].text;
+        html += ` ${option}
+    <div id="Questions">
+        <div id="Qheader">${option}</div>
+        <textarea id="Qreply"></textarea>
+    </div>
+
+    `;
+  return html
+}
+}
+ */
 
 
 

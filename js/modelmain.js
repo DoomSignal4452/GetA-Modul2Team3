@@ -1,6 +1,6 @@
 const model = {
     app: {
-        currentPage: 'elevDash',
+        currentPage: 'admindash',
         currentLogInn: '',
     },
     inputs: {
@@ -115,7 +115,7 @@ const model = {
     questions: [
         { text: 'Bra dag?', slider: false, id: 1, parentId: 3002, date: '21.06.2021', },
         { text: 'Bra dag?', slider: false, id: 2, parentId: 1001, date: '', },
-        { text: 'Bra dag?', slider: false, id: 3, parentId: 3, date: '', },
+        { text: 'Rakkerfanter?', slider: false, id: 3, parentId: 3, date: '', },
 
 
     ],
@@ -181,3 +181,4 @@ function getChildren(entity){
 function getTopLevelEntities() {
     return model.entities.filter(e => e.parentId === null);
 }
+
