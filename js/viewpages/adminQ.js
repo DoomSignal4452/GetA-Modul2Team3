@@ -127,10 +127,6 @@ function updateViewAdminQ(hei) {
     </div> 
     </div>
 
-
-
-    
-    
     <div id="makeQuestions">
         <div id="addQuestion">     
             <div id="addQuestionText">
@@ -140,17 +136,14 @@ function updateViewAdminQ(hei) {
             </div>
         </div>
 
-         <div id="qToModules" class="large">
+        <div id="qToModules" class="large">
             <div class="modulbox">Modul 1
                 <input ${model.inputs.adminQmodelPage.modulCheckbox.modul1} onclick="modulChecked(1)" id="modul1" value="${model.inputs.adminQmodelPage.modulCheckbox.modul1}" class="checkbox" type="checkbox" />
             </div>
-     
 
-            
             <div class="modulbox">Modul 2
                 <input ${model.inputs.adminQmodelPage.modulCheckbox.modul2} onclick="modulChecked(2)" id="modul2" value="${model.inputs.adminQmodelPage.modulCheckbox.modul2}" class="checkbox" type="checkbox" />
             </div>
-      
 
             <div class="modulbox">Modul 3
                 <input ${model.inputs.adminQmodelPage.modulCheckbox.modul3} onclick="modulChecked(3)" id="modul3" value="${model.inputs.adminQmodelPage.modulCheckbox.modul3}" class="checkbox" type="checkbox" />
@@ -158,8 +151,6 @@ function updateViewAdminQ(hei) {
 
             <br>
 
-         
-            
             <div class="dropbox">
                 <input id="teamCheckbox"  class="checkbox" type="checkbox" />
                     ${createDropDownTeam()}
@@ -171,21 +162,12 @@ function updateViewAdminQ(hei) {
                 ${createDropDownElever()}
             </div>
 
-
-
-
-
-
-
-
-
             <div class="modulbox">add slidebar
                 <input  class="checkbox" type="checkbox" />
             </div>
 
             <input type="date">            
             <button id="addnow">Lagre Spørsmål</button> 
-         
          </div>
     </div>
 

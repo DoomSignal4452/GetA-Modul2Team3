@@ -195,3 +195,64 @@ h2 {
   background-color: rgb(212, 212, 212);
   width: 5cm;
 }
+
+
+/* ######################## NEW COLOURS ######################## */
+html, body {
+    margin: 0;
+}
+
+#app {
+
+    width: auto;
+    margin: auto;
+}
+
+#adminDashPage {
+    min-height: 20cm;
+}
+
+.modulBox {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    background-color: rgb(155, 155, 155);
+    border-bottom-left-radius: 4mm;
+    border-bottom-right-radius: 4mm;
+    
+}
+
+.moduler {
+    border-radius: 4mm;
+    min-width: 20cm;
+    max-width: 30cm;
+}
+
+.modulHeader {
+    cursor: pointer;
+    padding: 1mm;
+}
+
+h2 {
+    margin-left: 1mm;
+}
+
+.noselect {
+    -webkit-touch-callout: none; /* iOS Safari */
+      -webkit-user-select: none; /* Safari */
+       -khtml-user-select: none; /* Konqueror HTML */
+         -moz-user-select: none; /* Old versions of Firefox */
+          -ms-user-select: none; /* Internet Explorer/Edge */
+              user-select: none; /* Non-prefixed version, currently
+                                    supported by Chrome, Edge, Opera and Firefox */
+  }
+
+.teamBox {
+    margin: 2mm;
+    background-color: rgb(182, 182, 182);
+    padding: 2mm;
+    border-radius: 4mm;
+}
+
+.weelky {
+    height: 100%;
+}

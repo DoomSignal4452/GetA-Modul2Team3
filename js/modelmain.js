@@ -1,6 +1,6 @@
 const model = {
     app: {
-        currentPage: 'adminQ',
+        currentPage: 'admindash',
         currentLogInn: '',
     },
     inputs: {
@@ -54,19 +54,21 @@ const model = {
 
 
         // Modul1
-        { name: 'Team 1 M1', id: 1001, parentId: 1 },
-        { name: 'Team 2 M1', id: 1002, parentId: 1 },
-        { name: 'Team 3 M1', id: 1003, parentId: 1 },
-        { name: 'Team 4 M1', id: 1004, parentId: 1 },
+        { name: 'Team 1', id: 1001, parentId: 1 },
+        { name: 'Team 2', id: 1002, parentId: 1 },
+        { name: 'Team 3', id: 1003, parentId: 1 },
+        { name: 'Team 4', id: 1004, parentId: 1 },
+        
 
         // Modul2
-        { name: 'Team 1m2', id: 1005, parentId: 2 },
-        { name: 'Team 2m2', id: 1006, parentId: 2 },
+        { name: 'Team 1', id: 1005, parentId: 2 },
+        { name: 'Team 2', id: 1006, parentId: 2 },
         { name: 'Team 3', id: 1007, parentId: 2 },
         { name: 'Team 4', id: 1008, parentId: 2 },
+        { name: 'Team 5', id: 1013, parentId: 2 },
 
         // Modul3
-        { name: 'Team 1m3', id: 1009, parentId: 3 },
+        { name: 'Team 1', id: 1009, parentId: 3 },
         { name: 'Team 2', id: 1010, parentId: 3 },
         { name: 'Team 3', id: 1011, parentId: 3 },
         { name: 'Team 4', id: 1012, parentId: 3 },
@@ -86,27 +88,29 @@ const model = {
         { name: 'Marius', id: 3004, parentId: 1001, username: 'Marius', password: 'hemmelig' },
         { name: 'e', id: 3005, parentId: 1001, username: 'e', password: 'e' },
 
-        { name: 'ElevT2M1', id: 3004, parentId: 1002, username: 'Marius', password: 'hemmelig' },
+        { name: 'ElevT2M1', id: 3006, parentId: 1002, username: 'Marius', password: 'hemmelig' },
 
-        { name: 'ElevT3M1', id: 3004, parentId: 1003, username: 'Marius', password: 'hemmelig' },
+        { name: 'ElevT3M1', id: 3007, parentId: 1003, username: 'Marius', password: 'hemmelig' },
 
-        { name: 'ElevT4M1', id: 3004, parentId: 1004, username: 'Marius', password: 'hemmelig' },
+        { name: 'ElevT4M1', id: 3008, parentId: 1004, username: 'Marius', password: 'hemmelig' },
 
-        { name: 'ElevT1M2', id: 3004, parentId: 1005, username: 'Marius', password: 'hemmelig' },
+        { name: 'ElevT1M2', id: 3009, parentId: 1005, username: 'Marius', password: 'hemmelig' },
 
-        { name: 'ElevT2M2', id: 3004, parentId: 1006, username: 'Marius', password: 'hemmelig' },
+        { name: 'ElevT2M2', id: 3010, parentId: 1006, username: 'Marius', password: 'hemmelig' },
 
-        { name: 'ElevT3M2', id: 3004, parentId: 1007, username: 'Marius', password: 'hemmelig' },
+        { name: 'ElevT3M2', id: 3011, parentId: 1007, username: 'Marius', password: 'hemmelig' },
 
-        { name: 'ElevT4M2', id: 3004, parentId: 1008, username: 'Marius', password: 'hemmelig' },
+        { name: 'ElevT4M2', id: 3012, parentId: 1008, username: 'Marius', password: 'hemmelig' },
 
-        { name: 'ElevT1M3', id: 3004, parentId: 1009, username: 'Marius', password: 'hemmelig' },
+        { name: 'ElevT1M3', id: 3013, parentId: 1009, username: 'Marius', password: 'hemmelig' },
 
-        { name: 'ElevT2M3', id: 3004, parentId: 1010, username: 'Marius', password: 'hemmelig' },
+        { name: 'ElevT2M3', id: 3014, parentId: 1010, username: 'Marius', password: 'hemmelig' },
 
-        { name: 'ElevT3M3', id: 3004, parentId: 1011, username: 'Marius', password: 'hemmelig' },
+        { name: 'ElevT3M3', id: 3015, parentId: 1011, username: 'Marius', password: 'hemmelig' },
 
-        { name: 'ElevT4M3', id: 3004, parentId: 1012, username: 'Marius', password: 'hemmelig' },
+        { name: 'ElevT4M3', id: 3016, parentId: 1012, username: 'Marius', password: 'hemmelig' },
+
+        { name: 'ElevT5M2', id: 3017, parentId: 1013, username: 'Marius', password: 'hemmelig' },
 
     ],
     questions: [
