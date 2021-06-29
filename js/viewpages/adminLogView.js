@@ -29,23 +29,7 @@ function updateViewAdminLogg() {
                     </div> 
                     <br><br>
 
-                    <div id="Questions">
-                        <div id="Qheader">Hvordan har uken din gått?</div>
-                        <textarea id="Qreply" placeholder="Elevsvar her"></textarea>
-                        <textarea id="Qcomment" placeholder="Admin comments her"></textarea>
-                    </div>
-
-                    <div id="Questions">
-                        <div id="Qheader">Hvordan fungerer teamet ditt?</div>
-                        <textarea id="Qreply" placeholder="Elevsvar her"></textarea>
-                        <textarea id="Qcomment" placeholder="Admin comments her"></textarea>
-                    </div>
-
-                    <div id="Questions">
-                        <div id="Qheader">Hva kan du forbedre til neste uke?</div>
-                        <textarea id="Qreply" placeholder="Elevsvar her"></textarea>
-                        <textarea id="Qcomment" placeholder="Elevsvar her"></textarea>
-                    </div>
+                 ${getQuestionsFromArrayAdmin()}
                 </div>
             </div>
         </div>

@@ -3,14 +3,52 @@ function addQuestion() {
     let date = new Date().toISOString().substring(0,10);
 
     let question = {   text: model.inputs.adminQmodelPage.lagSpm, 
-                        id: 1, 
+                        id: 4, 
                         parentId: null, 
                         date: `${date}`};
     model.questions.push(question);
+    model.answers.push({ elev: '', answer: '', id: 4, questionId: 3, entityId: 6, teachersComment: '' },)
+
+    // let answer = { elev: 'Emil', answer: 'Jo, takk -bra.', id: 4, questionId: 4, entityId: 6, teachersComment: 'Godt å høre!' }
+    // let answers = model.answers.push(answer);
+    
     alert ('Question added successfully');
     model.inputs.adminQmodelPage.lagSpm = '';
     updateViewAdminQ();
 
+}
+
+function getQuestionsFromArrayAdmin() {
+    let html = ``;
+    for (let i = 0; i < model.questions.length; i++) {
+      let option = model.questions[i].text;
+      let ansOption = model.answers[i].answer;
+
+      html += `
+    <div id="Questions">
+        <div id="Qheader">${option}</div>`;
+
+        html += `<textarea id="Qcomment" placeholder="Admin comments her"></textarea>`;
+                
+
+    html += getAnswersFromArray(i);
+
+    html += '</div>';
+    }
+
+        
+return html;
+}
+
+        
+
+
+function getAnswersFromArray(i) {
+    let html = '';    
+    let ansOption = model.answers[i].answer;       
+    html += `<div id="Qreply">${ansOption}</div>`;        
+    
+    return html;
 }
 
 
@@ -205,16 +243,7 @@ function createDropDownElever() {
     } else return dropDowns = 'Velg en Modul';
 }
 
-function addQuestionToArray() {
-    model.questions.push({
-        text: model.questions.text,
-        slider: model.questions.slider,
-        id: model.questions.id,
-        parentId: model.questions.parentId,
-        date: model.questions.date,
-    })
-    alert ('Question added successfully')
-}
+
 
 
 

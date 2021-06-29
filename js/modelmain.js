@@ -1,6 +1,6 @@
 const model = {
     app: {
-        currentPage: 'admindash',
+        currentPage: 'elevDash',
         currentLogInn: '',
     },
     inputs: {
@@ -31,6 +31,10 @@ const model = {
             SlideBarOrNot: false, //skal addes
         },
         otherPage: {
+        },
+        
+        ElevLogPage: {
+            ElevLog: '',
         }
     },
     /*
@@ -113,28 +117,16 @@ const model = {
 
     ],
     questions: [
-        { text: 'Bra dag?', slider: false, id: 1, parentId: 3002, date: '21.06.2021', },
-        { text: 'Bra dag?', slider: false, id: 2, parentId: 1001, date: '', },
-        { text: 'Rakkerfanter?', slider: false, id: 3, parentId: 3, date: '', },
+        { text: 'Hvordan har uken din gått?', slider: false, id: 1, parentId: 3002, date: '21.06.2021', },
+        { text: 'Hvordan fungerer teamet ditt?', slider: false, id: 2, parentId: 1001, date: '', },
+        { text: 'Hva kan du forbedre til neste uke?', slider: false, id: 3, parentId: 3, date: '', },
 
 
     ],
     answers: [
-        { Elev: 'Alexander', test: 'Jo, takk -bra.', id: 1, questionId: 1, entityId: 6, teachersComment: 'Godt å høre!' },
-        { Elev: 'Alexander', test: 'Jo, takk -bra.', id: 2, questionId: 2, entityId: 6, teachersComment: 'Godt å høre!' },
-        { Elev: 'Alexander', test: 'Jo, takk -bra.', id: 3, questionId: 3, entityId: 6, teachersComment: 'Godt å høre!' },
-
-        { Elev: 'Emil', test: 'Jo, takk -bra.', id: 4, questionId: 1, entityId: 6, teachersComment: 'Godt å høre!' },
-        { Elev: 'Emil', test: 'Jo, takk -bra.', id: 5, questionId: 2, entityId: 6, teachersComment: 'Godt å høre!' },
-        { Elev: 'Emil', test: 'Jo, takk -bra.', id: 6, questionId: 3, entityId: 6, teachersComment: 'Godt å høre!' },
-
-        { Elev: 'Lina', test: 'Jo, takk -bra.', id: 7, questionId: 1, entityId: 6, teachersComment: 'Godt å høre!' },
-        { Elev: 'Lina', test: 'Jo, takk -bra.', id: 8, questionId: 2, entityId: 6, teachersComment: 'Godt å høre!' },
-        { Elev: 'Lina', test: 'Jo, takk -bra.', id: 9, questionId: 3, entityId: 6, teachersComment: 'Godt å høre!' },
-
-        { Elev: 'Marius', test: 'Jo, takk -bra.', id: 10, questionId: 1, entityId: 6, teachersComment: 'Godt å høre!' },
-        { Elev: 'Marius', test: 'Jo, takk -bra.', id: 11, questionId: 2, entityId: 6, teachersComment: 'Godt å høre!' },
-        { Elev: 'Marius', test: 'Jo, takk -bra.', id: 12, questionId: 3, entityId: 6, teachersComment: 'Godt å høre!' },
+        { elev: 'Emil', answer: 'Jo, takk -bra.', id: 1, questionId: 1, entityId: 6, teachersComment: 'Godt å høre!' },
+        { elev: 'Emil', answer: 'Teamet fungerer bra', id: 2, questionId: 2, entityId: 6, teachersComment: 'Godt å høre!' },
+        { elev: 'Emil', answer: 'Skrive logg', id: 3, questionId: 3, entityId: 6, teachersComment: 'Godt å høre!' },
     ],
 };
 

@@ -59,7 +59,7 @@ function ViewElevHeader() {
 
         </div>
 
-    </div>
+    </div></div>
     `;
 }
 

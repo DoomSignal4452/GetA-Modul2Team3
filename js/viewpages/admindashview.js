@@ -50,7 +50,7 @@ function updateViewAdminDash() {
                         <h3 id="teamHeader">${team.name}</h3>`;
             const students = getChildren(team);
                 for(let student of students){
-                html += `<div>${student.name}</div>`;
+                html += `<div onclick="updateViewAdminLogg()">${student.name}</div>`;
             }
 
             html += `<div></div></div>`;

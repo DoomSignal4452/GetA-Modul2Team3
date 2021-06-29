@@ -1,3 +1,49 @@
+#makeQuestions {
+    /*background-color: #aabeff;*/
+    background-color: rgb(203, 214, 238);
+    height: 90%;
+    padding-top: 5mm;
+}
+
+#addQuestion {
+    background-color: white;
+    height: 30px;
+    width: 91%;
+    margin: auto;
+    padding: 2px;
+}
+
+#addQuestionButton {
+    float: right;
+    background-color: #ff7b00;
+    height: 30px;
+    width: 30px;
+    font-size: x-large;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#addQuestionText {
+    align-items: center;
+}
+
+.newQ {
+    margin-top: 6px;
+}
+
+#qToModules {
+    display: grid;
+    grid-template-rows: 1.5fr 6fr;
+    background-color: rgb(175, 194, 236);
+    margin: auto;
+    margin-top: 2vh;
+    height: auto;
+    width: 91%;
+    padding: 10mm;
+    border-radius: 10mm;
+    max-width: 22cm;
+}
 
 .modulbox {
     margin-top: 1mm;
